@@ -1,0 +1,25 @@
+/*
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+*/
+
+/*
+.dropdown>.dropdown-toggle:hover {
+    !*Without this, clicking will make it sticky*!
+    pointer-events: none;
+}*/
+
+/*@media only screen and (min-width: 767px) {
+    .zoo-list ul li:hover> ul{display:block}
+    .zoo-list ul ul{position:absolute;top:100%;left:0;min-width:250px;display:none}
+    !*******!
+    .zoo-list ul ul li{position:relative}
+    .zoo-list ul ul li:hover> ul{display:block}
+    .zoo-list ul ul ul{position:absolute;top:0;left:100%;min-width:250px;display:none}
+    !*******!
+    .zoo-list ul ul ul li{position:relative}
+    .zoo-list ul ul ul li:hover ul{display:block}
+    .zoo-list ul ul ul ul{position:absolute;top:0;left:-100%;min-width:250px;display:none;z-index:1}
+
+}*/
