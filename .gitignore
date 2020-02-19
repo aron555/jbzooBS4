@@ -1,3 +1,5 @@
+/.idea/*
+
 /administrator/components/com_zoo/*
 /administrator/language/en-GB/*
 /administrator/language/ru-RU/*
