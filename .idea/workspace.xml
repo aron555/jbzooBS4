@@ -30,8 +30,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="47" lean-forward="true" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+            <state relative-caret-position="481">
+              <caret line="915" column="1" selection-start-line="915" selection-start-column="1" selection-end-line="915" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/configuration.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="60" column="24" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -98,9 +107,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-7" />
-    <option name="y" value="10" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="22" />
+    <option name="y" value="47" />
     <option name="width" value="1612" />
     <option name="height" value="857" />
   </component>
@@ -259,15 +268,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582103559023</updated>
-      <workItem from="1582103563435" duration="24904000" />
+      <workItem from="1582103563435" duration="26510000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24904000" />
+    <option name="totallyTimeSpent" value="26510000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="10" width="1612" height="857" extended-state="0" />
+    <frame x="22" y="47" width="1612" height="857" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -334,13 +343,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
           <caret line="53" column="71" lean-forward="true" selection-start-line="53" selection-start-column="71" selection-end-line="53" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configuration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -477,10 +479,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/configuration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="60" column="24" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="47" lean-forward="true" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+        <state relative-caret-position="481">
+          <caret line="915" column="1" selection-start-line="915" selection-start-column="1" selection-end-line="915" selection-end-column="1" />
         </state>
       </provider>
     </entry>

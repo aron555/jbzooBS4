@@ -913,7 +913,7 @@
 /templates/protostar/*
 /templates/system/*
 /templates/index.html
-/tmp/*
+#/tmp/*
 /configuration.php
 /htaccess.txt
 /.htaccess
