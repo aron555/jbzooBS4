@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="search" method="upgrade">
+    <name>Search - ZOO (categories)</name>
+    <author>SmetDenis</author>
+    <creationDate>2015</creationDate>
+    <copyright>JBZoo.com</copyright>
+    <license>JBZoo Proprietary Use License</license>
+    <authorEmail>admin@jbzoo.com</authorEmail>
+    <authorUrl>http://jbzoo.com</authorUrl>
+    <version>1.1</version>
+    <description>Search for Zoo (group by categories)</description>
+
+    <files>
+        <filename plugin="zoocategory">zoocategory.php</filename>
+        <filename plugin="zoocategory">model.categorysearch.php</filename>
+    </files>
+
+</extension>
