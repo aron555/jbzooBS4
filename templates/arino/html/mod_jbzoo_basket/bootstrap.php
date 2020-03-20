@@ -26,9 +26,9 @@ $items = $modHelper->getBasketItems(array(
 
     <?php if ((int)$params->get('jbcart_button_gotocart', 1)): ?>
         <a rel="nofollow" class="jbcart-module-gotocart"
-           href="<?php echo $modHelper->getBasketUrl(); ?>">
+           href="<?php echo $modHelper->getBasketUrl(); ?>" title="В корзину">
 
-            <i class="fas fa-shopping-cart fa-2x"></i>
+            <i class="fas fa-cart-arrow-down fa-2x"></i>
 
             <!--<img src="/modules/mod_jbzoo_basket/assets/images/cart-icon.svg" alt="cart">-->
 

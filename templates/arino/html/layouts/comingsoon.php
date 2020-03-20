@@ -37,8 +37,7 @@ $offline_class = ( $offline_condition )? 'offline': '';
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <?php
 			$theme->head();
-			$theme->add_js('jquery.countdown.min.js');
-			$theme->add_js('custom.js');
+			//$theme->add_js('custom.js');
 			$theme->add_css('font-awesome.min.css, template.css');
 			$theme->add_css('fa-v4-shims.css');
 			$theme->add_css('presets/' . $params->get('preset', 'preset1') . '.css');
@@ -81,7 +80,7 @@ $offline_class = ( $offline_condition )? 'offline': '';
 			<?php else: ?>
 				<?php if ($app->get('display_offline_message', 1) == 1 && str_replace(' ', '', $app->get('offline_message')) != '') : ?>
 					<div class="row justify-content-center">
-						<div class="col-lg-8">
+						<div class="col-lg-12">
 							<div class="coming-soon-content">
 								<?php echo $app->get('offline_message'); ?>
 							</div>
@@ -89,7 +88,7 @@ $offline_class = ( $offline_condition )? 'offline': '';
 					</div>
 				<?php elseif ($app->get('display_offline_message', 1) == 2) : ?>
 					<div class="row justify-content-center">
-						<div class="col-lg-8">
+						<div class="col-lg-12">
 							<div class="coming-soon-content">
 								<?php echo Text::_('JOFFLINE_MESSAGE'); ?>
 							</div>

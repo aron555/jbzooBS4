@@ -121,32 +121,7 @@ if ($custom_js = $this->params->get('custom_js'))
 
         $theme->head();
 
-        $theme->add_css('font-awesome.min.css');
-
-        $theme->add_js('jquery-3.4.1.min.js');
-
-        $theme->add_js('jquery-migrate-3.1.0.min.js');
-
-        $theme->add_js('jquery-ui.min.js');
-
-        $theme->add_js('slick.min.js');
-        $theme->add_js('mdb/popper.min.js');
-        $theme->add_js('mdb/mdb.min.js');
-
-        $theme->add_js('jquery.lazy.min.js');
-
-        $theme->add_js('jquery.sticky.js');
-        $theme->add_js('main.js');
-
         $theme->add_scss('master', $scssVars, 'template');
-
-        if($this->direction == 'rtl')
-        {
-            $theme->add_scss('rtl', $scssVars, 'rtl');
-        }
-
-        $theme->add_scss('presets', $scssVars, 'presets/' . $scssVars['preset']);
-        $theme->add_css('custom');
 
         //Before Head
         if ($before_head = $this->params->get('before_head'))
@@ -154,12 +129,13 @@ if ($custom_js = $this->params->get('custom_js'))
             echo $before_head . "\n";
         }
         ?>
+
     </head>
     <body class="<?php echo $theme->bodyClass(); ?>">
     <?php if($this->params->get('preloader')) : ?>
         <div class="sp-preloader"><div></div></div>
     <?php endif; ?>
-<?php //echo "<pre>";var_dump($path);echo "</pre>"; ?>
+<?php //echo "<pre>";var_dump($app->getMenu()->getItems("", ""));echo "</pre>"; die(); ?>
     <div class="body-wrapper">
         <div class="body-innerwrapper">
             <?php echo $theme->getHeaderStyle(); ?>
@@ -193,5 +169,20 @@ if ($custom_js = $this->params->get('custom_js'))
     <?php if( $app->input->get('view') == 'article' && $this->params->get('reading_time_progress', 0) ): ?>
         <div data-position="<?php echo $progress_bar_position; ?>" class="sp-reading-progress-bar"></div>
     <?php endif; ?>
+
+    <?php
+    $js = JURI::base().'templates/'.$app->getTemplate().'/js/';
+    $css = JURI::base().'templates/'.$app->getTemplate().'/css/';
+    ?>
+    <link href="<?= $css.'font-awesome.min.css' ?>" rel="stylesheet" type="text/css">
+
+    <script>
+        let $ = jQuery.noConflict();
+    </script>
+    <script src="<?= $js.'mdb/mdb.min.js' ?>"></script>
+    <script src="<?= $js.'slick.min.js' ?>"></script>
+    <script src="<?= $js.'yall.min.js' ?>"></script>
+    <script src="<?= $js.'main.js' ?>"></script>
+
     </body>
 </html>

@@ -1,0 +1,58 @@
+//
+// JBZoo Application
+//
+// This file is part of the JBZoo CCK package.
+// For the full copyright and license information, please view the LICENSE
+// file that was distributed with this source code.
+//
+// @package    Application
+// @license    GPL-2.0
+// @copyright  Copyright (C) JBZoo.com, All rights reserved.
+// @link       https://github.com/JBZoo/JBZoo
+//
+
+@import "jbzoo";
+
+.jbzoo {
+
+    // customized radio button START
+    .jbcart-radio {
+
+        float: left;
+        cursor: pointer;
+        margin-right: 12px;
+        margin-bottom: 8px;
+        position: relative;
+        #sprite > .init('../../img/misc/radio.png', 26px);
+
+        &:hover {
+            #sprite > .image(1);
+        }
+
+        // relate with real radio-button
+        &-input {
+            #box > .ghost();
+            &:hover            + .jbcart-radio-label .jbcart-radio { #sprite > .image(1); }
+            &:focus            + .jbcart-radio-label .jbcart-radio { #sprite > .image(1); }
+            &:checked          + .jbcart-radio-label .jbcart-radio { #sprite > .image(2); }
+            &:checked:hover    + .jbcart-radio-label .jbcart-radio { #sprite > .image(3); }
+            &:checked:focus    + .jbcart-radio-label .jbcart-radio { #sprite > .image(3); }
+            &:disabled         + .jbcart-radio-label .jbcart-radio { #sprite > .image(4); }
+            &:disabled:focus   + .jbcart-radio-label .jbcart-radio { #sprite > .image(4); }
+            &:disabled:checked + .jbcart-radio-label .jbcart-radio { #sprite > .image(5); }
+        }
+
+        &-label:hover .jbcart-radio,
+        label:hover &-input {
+            #sprite > .image(1);
+        }
+
+    }
+    // customized radio button END
+
+    // others
+    .jbcart {
+
+    }
+
+}

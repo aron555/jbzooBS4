@@ -11,7 +11,6 @@ defined('_JEXEC') or die;
 //JHtml::_('formbehavior.chosen', 'select');
 
 ?>
-
 <div class="jbzoo search<?php echo $this->pageclass_sfx; ?>">
 
     <?php if ($this->params->get('show_page_heading')) : ?>
@@ -26,12 +25,8 @@ defined('_JEXEC') or die;
         </h1>
     <?php endif; ?>
 
-
     <?php
-
     //echo $this->loadTemplate('form');
-
-
     if ($this->error == null && count($this->results) > 0) {
         echo $this->loadTemplate('results');
     } else {

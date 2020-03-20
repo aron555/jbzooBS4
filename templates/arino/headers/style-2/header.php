@@ -2,7 +2,7 @@
 /**
  * @package Helix Ultimate Framework
  * @author JoomShaper https://www.joomshaper.com
- * @copyright Copyright (c) 2010 - 2018 JoomShaper
+ * @copyright Copyright (c) 2010 - 2019 JoomShaper
  * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or Later
 */
 
@@ -14,25 +14,25 @@ $offcanvs_position = $displayData->params->get('offcanvas_position', 'right');
 $feature_folder_path     = JPATH_THEMES . '/' . $data->template->template . '/features/';
 
 include_once $feature_folder_path.'logo.php';
+include_once $feature_folder_path.'social.php';
+include_once $feature_folder_path.'contact.php';
 include_once $feature_folder_path.'menu.php';
 
 $output  = '';
 
-$output .= '<header id="sp-header">';
+$output .= '<div id="sp-top-bar">';
 $output .= '<div class="container">';
 $output .= '<div class="container-inner">';
-$output .= '<div class="row">';
+$output .= '<div class="row align-items-center">';
 
-$class1 = 'col-8 col-lg-3';
-$class2 = 'col-4 col-lg-9';
-if($offcanvs_position == 'left')
-{
-    $class1 = 'col-12 col-lg-3';
-    $class2 = 'd-none d-lg-block col-lg-9';
-}
+$classLogo = 'col-4 col-lg-3 order-1';
+$classTop1 = 'col col-lg-4 d-none d-md-flex order-2';
+$classTop2 = 'col col-lg-3 order-3';
+$classTop3 = 'col col-lg-2 d-none d-md-flex order-4 justify-content-center justify-content-md-end';
 
-$output .= '<div id="sp-logo" class="'. $class1 .'">';
-$output .= '<div class="sp-column">';
+
+$output .= '<div id="sp-logo" class="'. $classLogo .'">';
+$output .= '<div class="sp-column d-flex flex-row">';
 $logo    = new HelixUltimateFeatureLogo($data->params);
 if(isset($logo->load_pos) && $logo->load_pos == 'before')
 {
@@ -47,19 +47,64 @@ else
 $output .= '</div>';
 $output .= '</div>';
 
-$output .= '<div id="sp-menu" class="'. $class2 .'">';
-$output .= '<div class="sp-column">';
-$menu    = new HelixUltimateFeatureMenu($data->params);
-if(isset($menu->load_pos) && $menu->load_pos == 'before')
+
+$output .= '<div id="sp-top1" class="'. $classTop1 .'">';
+$output .= '<div class="sp-column d-flex flex-row justify-content-end justify-content-md-center w-100">';
+
+$output .= '<jdoc:include type="modules" name="top1" style="sp_xhtml" />';
+
+$output .= '</div>';
+$output .= '</div>';
+
+$output .= '<div id="sp-top2" class="'. $classTop2 .'">';
+$output .= '<div class="sp-column d-flex flex-row justify-content-end justify-content-md-center">';
+$contact = new HelixUltimateFeatureContact($data->params);
+if(isset($contact->load_pos) && $contact->load_pos == 'before')
 {
-    $output .= $menu->renderFeature();
-    $output .= '<jdoc:include type="modules" name="menu" style="sp_xhtml" />';
+    $output .= $contact->renderFeature();
+    $output .= '<jdoc:include type="modules" name="top2" style="sp_xhtml" />';
 }
 else
 {
-    $output .= '<jdoc:include type="modules" name="menu" style="sp_xhtml" />';
-    $output .= $menu->renderFeature();
+    $output .= '<jdoc:include type="modules" name="top2" style="sp_xhtml" />';
+    $output .= $contact->renderFeature();
 }
+$output .= '</div>';
+$output .= '</div>';
+
+$output .= '<div id="sp-top3" class="'. $classTop3 .'">';
+$output .= '<div class="sp-column d-flex flex-row justify-content-center justify-content-md-end">';
+$output .= '<jdoc:include type="modules" name="top3" style="sp_xhtml" />';
+$output .= '</div>';
+$output .= '</div>';
+
+$output .= '</div>';
+$output .= '</div>';
+$output .= '</div>';
+$output .= '</div>';
+
+//$output .= '<div class="nav-placeholder" style="height: inherit;"></div>';
+
+$output .= '<header id="sp-header">';
+$output .= '<div class="container">';
+$output .= '<div class="container-inner">';
+$output .= '<div class="row align-items-center">';
+
+$classMenuLeft = 'col-12 col-lg-4 d-flex';
+$classMenu = 'col-lg-8 d-none d-sm-none d-md-none d-lg-flex justify-content-lg-end';
+
+$output .= '<div id="sp-menu-left" class="'. $classMenuLeft .'">';
+$output .= '<div class="sp-column d-flex flex-row">';
+$output .= '<jdoc:include type="modules" name="menu-left" style="sp_xhtml" />';
+$output .= '</div>';
+$output .= '</div>';
+
+$output .= '<div id="sp-menu" class="'. $classMenu .'">';
+$output .= '<div class="sp-column d-flex flex-row">';
+$menu    = new HelixUltimateFeatureMenu($data->params);
+//if(isset($menu->load_pos)&& $menu->load_pos == 'before') {}
+$output .= $menu->renderFeature();
+$output .= '<jdoc:include type="modules" name="menu" style="sp_xhtml" />';
 $output .= '</div>';
 $output .= '</div>';
 

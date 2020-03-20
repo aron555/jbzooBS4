@@ -6,22 +6,20 @@
  * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or Later
  */
 
-defined ('_JEXEC') or die();
+defined('_JEXEC') or die();
 
 ?>
 <div class="search">
     <form action="<?php echo JRoute::_('index.php'); ?>" method="post">
-        <?php
-        $output = '';
-        $output .= '<div class="input-group">';
-        $output .= '<input name="searchword" id="mod-search-searchword' . $module->id . '" class="form-control" type="search" placeholder="' . $text . '">';
-        $output .= '<span class="input-group-btn">';
-        $output .= '<button class="btn btn-primary" onclick="this.form.searchword.focus();"><i class="fa fa-search"></i></button>';
-        $output .= '</span>';
-        $output .= '</div>';
 
-        echo $output;
-        ?>
+        <div class="input-group">
+            <i class="fa fa-search"></i>
+            <input name="searchword" id="mod-search-searchword<?= $module->id ?>" class="form-control" type="search"
+                   placeholder="<?= $text ?>">
+            <button class="z-depth-0 go-search" title="Поиск" onclick="this.form.searchword.focus();"><i class="fa fa-level-down fa-rotate-90"></i>
+            </button>
+        </div>
+
         <input type="hidden" name="task" value="search">
         <input type="hidden" name="option" value="com_search">
         <input type="hidden" name="Itemid" value="<?php echo $mitemid; ?>">

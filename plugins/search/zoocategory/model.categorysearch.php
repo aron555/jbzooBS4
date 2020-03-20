@@ -12,7 +12,7 @@
 defined('_JEXEC') or die('Restricted access');
 
 
-if (file_exists( dirname(__FILE__) . '/class.jbdump.php')) { @require_once dirname(__FILE__) . '/class.jbdump.php'; }
+//if (file_exists( dirname(__FILE__) . '/class.jbdump.php')) { @require_once dirname(__FILE__) . '/class.jbdump.php'; }
 
 /**
  * Class JBModelModelCategorySearch
@@ -298,7 +298,7 @@ class JBModelModelCategorySearch extends JBModel
             }
         }
 
-        $access = $elements ? 'NOT element_id in (' . implode(',', $elements) . ')' : '1';
+        $access = $elements ? 'NOT element_id in (' . implode(',', $elements) . ')' : '0';
 
         return $access;
     }
@@ -334,7 +334,7 @@ class JBModelModelCategorySearch extends JBModel
     {
         $reg   = "/\s(под|много|что|когда|где|или|поэтому|все|будем|как)\s/iu";
         $query = preg_replace($reg, ' ', ' ' . $query . ' ');
-        $query = JString::trim($query);
+        $query = \Joomla\String\StringHelper::trim($query);
         return $query;
     }
 
@@ -351,9 +351,9 @@ class JBModelModelCategorySearch extends JBModel
         $keywords = array();
         foreach ($words as $word) {
 
-            $word = JString::strtoupper(JString::trim($word));
+            $word = \Joomla\String\StringHelper::strtoupper(\Joomla\String\StringHelper::trim($word));
 
-            if (JString::strlen($word) < 1) {
+            if (\Joomla\String\StringHelper::strlen($word) < 1) {
                 continue;
 
             } else {

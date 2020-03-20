@@ -10,8 +10,7 @@
 defined('_JEXEC') or die;
 
 
-$cols     = 3;
-$maxItems = 16;
+$cols     = 4;
 
 $app         = App::getInstance('zoo');
 $application = $app->zoo->getApplication();
@@ -32,37 +31,30 @@ $jblayout->setView($this);
 $isCategory = plgSearchZooCategory::getCategory();
 $currentUrl = $app->jbenv->getCurrentUrl();
 
-?>
 
-
-
-<div>
-    <?php
-    $itemIds = array();
-    foreach($this->results as $result) {
-        if (isset($result->item_id)) {
-            $itemIds[$result->item_id] = $result->item_id;
-        }
+$itemIds = array();
+foreach($this->results as $result) {
+    if (isset($result->item_id)) {
+        $itemIds[$result->item_id] = $result->item_id;
     }
+}
 
-    if ($itemIds) {
-        $items = plgSearchZooCategory::createItems($itemIds);
+if ($itemIds) {
+    $items = plgSearchZooCategory::createItems($itemIds);
+    ?>
+    <h1 class="h3">Вот, что мы нашли по запросу: "<?= $this->escape($this->origkeyword) ?>"</h1>
+<?php
+    echo $jblayout->render('items', $items);
+} ?>
 
-        ?>
-        <div class="items">
-            <?php echo $jblayout->render('items', $items); ?>
-        </div>
-    <?php } ?>
+<h3>
+    Если вы не смогли найти интересующий вас товар на нашем сайте, обязательно позвоните нашим менеджерам
+</h3>
 
-</div>
 
-<div class="alert">
-    <span>Если вы не смогли найти интересующий вас товар на нашем сайте, обязательно позвоните нашим менеджерам</span>
-</div>
-
-<div class="pagination">
-    <?php echo $this->pagination->getPagesLinks(); ?>
-</div>
+<!--<div class="pagination">
+    <?php /*echo $this->pagination->getPagesLinks(); */?>
+</div>-->
 
 
 

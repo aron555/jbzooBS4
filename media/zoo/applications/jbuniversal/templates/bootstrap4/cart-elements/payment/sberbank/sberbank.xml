@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    JBZoo App is universal Joomla CCK, application for YooTheme Zoo component
+
+    @package     jbzoo
+    @version     2.x Pro
+    @author      JBZoo App http://jbzoo.com
+    @copyright   Copyright (C) JBZoo.com,  All rights reserved.
+    @license     http://jbzoo.com/license-pro.php JBZoo Licence
+    @coder       Roman Koynov <koynov_rs@mail.ru>
+-->
+<element type="element" group="Core" hidden="false">
+    <name>Сбербанк</name>
+    <author>JBZoo.com</author>
+    <creationDate>2017</creationDate>
+    <copyright>Copyright (C) JBZoo.com</copyright>
+    <authorEmail>admin@jbzoo.com</authorEmail>
+    <authorUrl>http://jbzoo.com</authorUrl>
+    <version>1.0</version>
+    <description>Сбербанк</description>
+
+    <params>
+
+        <param name="description" type="textarea" default="JBZOO_ELEMENT_PAYMENT_SBERBANK_DEFAULT_DESCRIPTION"
+               label="JBZOO_ELEMENT_DESCRIPTION" description="JBZOO_ELEMENT_DESCRIPTION_DESC"/>
+
+        <param name="API_URL_PROD" type="text" default="" label="Адрес рабочего сервера (https://securepayments.sberbank.ru/payment/rest/)"
+               description="Адрес рабочего сервера (https://securepayments.sberbank.ru/payment/rest/)"/>
+
+        <param name="API_URL_TEST" type="text" default="" label="Адрес тестового сервера (https://3dsec.sberbank.ru/payment/rest/)"
+               description="Адрес тестового сервера (https://3dsec.sberbank.ru/payment/rest/)"/>
+
+        <param name="method_step" type="radio" default="1" label="Вид платежа"
+               description="Вид платежа">
+            <option value="1">Одностадийный платеж</option>
+            <option value="2">Двустадийный платеж</option>
+        </param>
+
+        <param name="merchant" type="text" default="" label="Мерчант"
+               description="Мерчант"/>
+
+        <param name="password" type="text" default="" label="Пароль"
+               description="Пароль"/>
+
+    </params>
+
+</element>

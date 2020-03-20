@@ -31,79 +31,86 @@ if ($appTemplate !== 'bootstrap') {
 $bootstrap = $modHelper->app->jbbootstrap;
 
 if ($count) {
-
-    echo '<div id="' . $modHelper->getModuleId() . '" class="jbzoo yoo-zoo">';
-    echo '<div class="module-items jbzoo-' . $border . ' module-items-col-' . $columns . '">';
-    echo $modHelper->renderRemoveButton();
-
-    //echo "<pre>";var_dump(count($items));echo "</pre>";
-
-    if ($columns) {
-
-        $j = $i = 0;
-
-        $rowItem = array_chunk($items, $columns);
-        $colClass = $bootstrap->columnClass($columns);
-
-        echo '<div class="items items-col-' . $columns . '">';
-
-        foreach ($rowItem as $row) {
-            echo '<div class="row item-row-' . $i . '">';
-
-            foreach ($row as $item) {
-
-                $app_id = $item->application_id;
-                $first = ($j == 0) ? ' first' : '';
-                $last = ($j == $count - 1) ? ' last' : '';
-                $j++;
-
-                $isLast = $j % $columns == 0;
-
-                if ($isLast) {
-                    $last .= ' last';
-                }
-
-                $renderer = $modHelper->createRenderer('item');
-
-                echo '<div class="item-column' . $colClass . $first . $last . '">'
-                    . '<div class="clearfix">'
-                    . $renderer->render('item.' . $modHelper->getItemLayout(), array(
-                        'item' => $item,
-                        'params' => $params
-                    ))
-                    . '</div>'
-                    . '</div>';
-            }
-
-            $i++;
-
-            echo '</div>';
-        }
-
-        echo '</div>';
-
-
-    } else {
-        ?>
-        <div class="slick row">
+    ?>
+    <div id="<?= $modHelper->getModuleId() ?>" class="jbzoo yoo-zoo">
+        <div class="module-items jbzoo-<?= $border ?> module-items-col-<?= $columns ?>">
             <?php
-            foreach ($items as $item) {
+            echo $modHelper->renderRemoveButton();
+
+            //echo "<pre>";var_dump(count($items));echo "</pre>";
+
+            if ($columns) {
+
+                $j = $i = 0;
+
+                $rowItem = array_chunk($items, $columns);
+                $colClass = $bootstrap->columnClass($columns);
+
                 ?>
-                <div class="col">
+                <div class="items items-col-<?= $columns ?>">
                     <?php
-                    $renderer = $modHelper->createRenderer('item');
-                    echo $renderer->render('item.' . $modHelper->getItemLayout(), array(
-                        'item' => $item,
-                        'params' => $params
-                    ));
+
+                    foreach ($rowItem as $row) {
+                        ?>
+                        <div class="row item-row-<?= $i ?>">
+                            <?php
+                            foreach ($row as $item) {
+
+                                $app_id = $item->application_id;
+                                $first = ($j == 0) ? ' first' : '';
+                                $last = ($j == $count - 1) ? ' last' : '';
+                                $j++;
+
+                                $isLast = $j % $columns == 0;
+
+                                if ($isLast) {
+                                    $last .= ' last';
+                                }
+
+                                $renderer = $modHelper->createRenderer('item');
+
+                                ?>
+                                <div class="item-column <?= $colClass . $first . $last ?>">
+                                    <?php
+                                    $renderer->render('item.' . $modHelper->getItemLayout(), array(
+                                        'item' => $item,
+                                        'params' => $params
+                                    ))
+                                    ?>
+                                </div>
+                                <?php
+                            }
+                            $i++;
+                            ?>
+                        </div>
+                        <?php
+                    }
+                    ?>
+                </div>
+                <?php
+            } else {
+                ?>
+                <div class="slick row">
+                    <?php
+                    foreach ($items as $item) {
+                        ?>
+                        <div class="col">
+                            <?php
+                            $renderer = $modHelper->createRenderer('item');
+                            echo $renderer->render('item.' . $modHelper->getItemLayout(), array(
+                                'item' => $item,
+                                'params' => $params
+                            ));
+                            ?>
+                        </div>
+                        <?php
+                    }
                     ?>
                 </div>
                 <?php
             }
             ?>
         </div>
-        <?php
-    }
-
-    echo '</div></div>';
+    </div>
+    <?php
 }

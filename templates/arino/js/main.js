@@ -87,35 +87,4 @@ jQuery(function ($) {
         $(this).closest('.menu-parent').toggleClass('menu-parent-open').find('>.menu-child').slideToggle(400);
     });
 
-    //Tooltip
-    $('[data-toggle="tooltip"]').tooltip();
-
-    //Header for mobile
-    /*(function(){
-        let windowWidth = $(window).width();
-        function moveHeader(){
-            const spHeader = $('#sp-header');
-            if($(window).width() < 992){
-                $(spHeader).find('>.container').css("display", "none");
-                $(spHeader).append($("#sp-top-bar"));
-                $(spHeader).find('.logo').css("height", "auto");
-                $(spHeader).css("height", "auto");
-
-                // Filter for mobile
-                $(".filter-mobile-collapse").attr("id", "productsfilter")
-            } else if($(window).width() > 992) {
-                $('.body-innerwrapper').prepend($("#sp-top-bar"))
-                $(spHeader).find('>.container').css("display", "block");
-            }
-        }
-        $(window).on('load', moveHeader)
-        $(window).on('resize', function(){
-            if($(window).width() != windowWidth){
-                windowWidth = $(window).width();
-                setTimeout(function(){
-                    moveHeader()
-                }, 1000)
-            }
-        })
-    })()*/
 });

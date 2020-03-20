@@ -19,7 +19,8 @@ class SppagebuilderAddonYmap extends SppagebuilderAddons {
 		$map = (isset($settings->map) && $settings->map) ? $settings->map : '';
 		$width = (isset($settings->width) && $settings->width) ? $settings->width : '';
 		$height = (isset($settings->height) && $settings->height) ? $settings->height : '';
-		$scroll = (isset($settings->scroll) && $settings->scroll) ? $settings->scroll : '';
+        $scroll = (isset($settings->scroll) && $settings->scroll == "1") ? 'true' : 'false';
+
 
 		if($map) {
 			$output  = '<div id="sppb-addon-map-'. $this->addon->id .'" class="sppb-addon sppb-addon-ymap ' . $class . '">';
