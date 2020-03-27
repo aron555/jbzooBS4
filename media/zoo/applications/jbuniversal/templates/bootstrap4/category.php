@@ -21,26 +21,7 @@ $this->app->jbdebug->mark('template::category::start');
 ?>
     <div class="row">
 
-        <?php
-        jimport('joomla.application.module.helper');
-        $module = JModuleHelper::getModules('category-filter'); // заполняем массив модулями, опубликованными в позиции
-
-        if (!empty($module)) {
-            ?>
-            <div class="col-md-3">
-                <?php
-                $attribs['style'] = 'none'; // указываем стиль вывода модуля none (так как при использовании стиля xhtml наблюдается дублирование заголовков модуля)
-
-                foreach ($module as $moduleitem) { // перебираем в цикле и выводим по очереди все модули из позиции category-filter
-                    echo JModuleHelper::renderModule($moduleitem, $attribs);
-                }
-                ?>
-            </div>
-            <?php
-        }
-        ?>
-
-        <div class="col-md">
+        <div class="col">
             <?php
 
             $this->app->jblayout->setView($this);
@@ -111,7 +92,7 @@ $this->app->jbdebug->mark('template::category::start');
                                         //var_dump($currentView, $currentTask);
                                         foreach ($childitems as $item) {
                                             ?>
-                                            <div class="col-md-4 my-3">
+                                            <div class="col-md-4 my-3 d-flex align-items-stretch">
                                                 <?php
                                                 echo $this->app->jblayout->renderItem($item, 'teaser');
                                                 ?>
