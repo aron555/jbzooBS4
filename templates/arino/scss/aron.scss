@@ -64,6 +64,13 @@ body .btn-primary {
   }
 }
 
+body {
+  .btn-primary.dropdown-toggle:hover, .btn-primary.dropdown-toggle:focus {
+    background-color: $white !important;
+    color: $default-color !important;
+  }
+}
+
 body .btn-secondary {
   color: $white !important;
   background-color: $secondary-color !important;

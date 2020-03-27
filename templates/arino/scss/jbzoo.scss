@@ -13,6 +13,14 @@ $black: "#000000";
 
 */
 
+#yoo-zoo .jbfilter-label {
+  padding: 2px 4px;
+  font-weight: bold;
+  color: $black;
+  text-shadow: none;
+  background: transparent;
+}
+
 .jsJBZooCart {
 
   .jbcart-payment-desc, .jbcart-shipping-desc {
@@ -161,7 +169,7 @@ $black: "#000000";
   }
 
   .jbprice-value-total {
-    font-size: 24px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 1.2;
     color: $primary-color;
@@ -182,9 +190,15 @@ $black: "#000000";
     cursor: pointer;
   }
 
-  .tizer { /*Тизер*/
+  .tizer {
 
     .item-title {
+      font-size: 14px;
+      height: 50px;
+      overflow: hidden;
+    }
+
+    /*.item-title {
       height: 86px;
       margin:  0;
       overflow-y: hidden;
@@ -220,7 +234,7 @@ $black: "#000000";
       }
     }
     .item-category {
-      /*height: 54px;*/
+      !*height: 54px;*!
       overflow: auto;
       a {
         color: $gray;
@@ -229,7 +243,7 @@ $black: "#000000";
           color: $secondary-color;
         }
       }
-    }
+    }*/
   }
 
   .jbprice-sku {
@@ -320,13 +334,13 @@ $black: "#000000";
       cursor: pointer;
     }
 
-    .jbprice-buttons-oneclick {
+    /*.jbprice-buttons-oneclick {
       background-image: linear-gradient(280deg, #ff324d, #ff0069);
       font-size: 14px;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 2px;
-    }
+    }*/
 
     .jbprice-tmpl-full.full-buttons, .jbprice-buttons {
       margin-bottom: 0;
