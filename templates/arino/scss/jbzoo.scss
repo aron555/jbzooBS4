@@ -13,6 +13,10 @@ $black: "#000000";
 
 */
 
+body button:focus {
+   outline: none;
+}
+
 #sp-main-body .jbfilter-label {
   padding: 2px 4px;
   font-weight: bold;
