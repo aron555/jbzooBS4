@@ -13,6 +13,16 @@ $black: "#000000";
 
 */
 
+.jbfilter-wrapper {
+  label {
+    line-height: 1;
+    vertical-align: top;
+  }
+  input {
+    vertical-align: top;
+  }
+}
+
 body button:focus {
    outline: none;
 }
