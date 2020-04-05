@@ -54,6 +54,9 @@
 
                 <field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL"
                        description="JFIELD_ALT_MODULE_LAYOUT_DESC"/>
+
+                <field name="text_search" type="text" label="Текст кнопки поиска"
+                       description="Текст кнопки поиска"/>
             </fieldset>
 
             <fieldset name="LOGIC">

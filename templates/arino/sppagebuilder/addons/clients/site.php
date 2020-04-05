@@ -28,7 +28,7 @@ class SppagebuilderAddonClients extends SppagebuilderAddons
         $carousel_bullet = (isset($settings->carousel_bullet) && $settings->carousel_bullet) ? 'true' : 'false';
         $carousel_arrow = (isset($settings->carousel_arrow) && $settings->carousel_arrow) ? 'true' : 'false';
 
-        $output = '<div class="sppb-addon sppb-addon-clients d-flex align-items-center' . $alignment . '' . $class . '"  
+        $output = '<div class="slick sppb-addon sppb-addon-clients d-flex align-items-center' . $alignment . '' . $class . '"  
 		data-slick=\'{
              "dots": ' . $carousel_bullet . ',
              "infinite": true,

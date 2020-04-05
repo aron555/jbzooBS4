@@ -19,6 +19,8 @@ defined('_JEXEC') or die('Restricted access');
 $submitShow = (int)$params->get('button_submit_show', 1);
 $resetShow = (int)$params->get('button_reset_show', 1);
 
+$value = $params->get('text_search', 1) ? $params->get('text_search', 1) : JText::_('JBZOO_BUTTON_SUBMIT');
+
 if ($submitShow || $resetShow) {
 
     echo '<div class="jbfilter-row jbfilter-buttons">';
@@ -27,7 +29,7 @@ if ($submitShow || $resetShow) {
         $attrs = [
             'type'  => 'submit',
             'name'  => 'send-form',
-            'value' => JText::_('JBZOO_BUTTON_SUBMIT'),
+            'value' => $value,
             'class' => [
                 'jsSubmit',
                 'btn btn-primary'
