@@ -110,7 +110,7 @@ $output .= '</div>';
 $output .= '</div>';
 
 $output .= '<div id="sp-menu-right" class="'. $classMenuRight .'">';
-$output .= '<div class="sp-column d-flex flex-row justify-content-lg-end">';
+$output .= '<div class="sp-column d-flex flex-row justify-content-lg-end ml-auto">';
 $output .= '<jdoc:include type="modules" name="menu-right" style="sp_xhtml" />';
 $output .= '</div>';
 $output .= '</div>';
