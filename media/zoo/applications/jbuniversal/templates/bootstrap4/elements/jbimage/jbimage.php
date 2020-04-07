@@ -196,7 +196,13 @@ class ElementJBImage extends ElementRepeatable implements iRepeatSubmittable
 
             $unique = $params->get('_layout') . '_' . $this->_item->id . '_' . $this->identifier;
 
-            $src = $this->_getDefaultImage($params)->url;
+            $src = $this->_jbimage->resize($image->orig, '50px', '50px');
+
+            if ($this->_getDefaultImage($params)) {
+                $src = $this->_getDefaultImage($params)->url;
+            }
+
+
 
             return $this->renderLayout($layout, array(
                     'imageAttrs' => $this->_buildAttrs(array(
