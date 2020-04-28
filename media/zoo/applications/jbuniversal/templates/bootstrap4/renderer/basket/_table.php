@@ -87,7 +87,7 @@ $config = $cart->getConfig();
                             } ?>
                         </div>
                         <div class="jbcart-subtotal col-md-auto col-6">
-                            <a class="btn btn-danger btn-xs btn-small round jsDelete">
+                            <a class="btn btn-danger jsDelete">
                                 <i class="fa fa-trash"></i>
                             </a>
                         </div>

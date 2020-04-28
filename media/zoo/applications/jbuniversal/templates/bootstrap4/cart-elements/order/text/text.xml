@@ -35,6 +35,9 @@
         <param name="pattern" type="text" default="" label="Паттерн для инпута"
                description="Паттерн для инпута"/>
 
+        <param name="placeholder" type="text" default="" label="Плейсхолдер для инпута"
+               description="Плейсхолдер для инпута, если нужен"/>
+
         <param name="access" type="zooaccesslevel" default="" label="JBZOO_ELEMENT_ACCESS"
                description="JBZOO_ELEMENT_ACCESS_DESC"/>
 

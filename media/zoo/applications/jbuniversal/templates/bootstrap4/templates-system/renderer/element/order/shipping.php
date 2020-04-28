@@ -73,7 +73,9 @@ try {
         )); ?> />
 
         <div class="jbcart-radio-label p-3">
-            <div class="jbcart-radio"></div>
+            <label for="<?php echo $uniqId; ?>">
+                <div class="jbcart-radio align-top m-0"></div>
+            </label>
             <label class="jbcart-shipping-name m-0" for="<?php echo $uniqId; ?>">
 
                 <?php echo $label; ?>
@@ -92,7 +94,7 @@ try {
 
                 $html = array();
 
-                $html[] = '<div class="jbcart-shipping-element m-0 p-0 jsShippingElement jsShippingAjax-' . $element->identifier . '">';
+                $html[] = '<div class="jbcart-shipping-element m-0 p-0 d-block jsShippingElement jsShippingAjax-' . $element->identifier . '">';
 
                 if ($description) {
                     $html[] = '<p class="jbcart-shipping-desc">' . JText::_($description) . '</p>';

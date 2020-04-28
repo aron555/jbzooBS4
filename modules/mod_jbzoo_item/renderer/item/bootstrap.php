@@ -25,28 +25,28 @@ defined('_JEXEC') or die('Restricted access');
                     <?php echo $this->renderPosition('image'); ?>
                     <div class="position-absolute top-right d-flex flex-column mx-1 mb-1">
                         <?php if ($this->checkPosition('new')) : ?>
-                            <div class="badge badge-success ml-auto" title="Новинка">
+                            <div class="badge badge-success ml-auto badge-new" title="Новинка">
                                 <?php echo $this->renderPosition('new', array(
                                     'style' => 'block'
                                 )); ?>
                             </div>
                         <?php endif; ?>
                         <?php if ($this->checkPosition('hit')) : ?>
-                            <div class="badge badge-warning ml-auto" title="Хит">
+                            <div class="badge badge-warning ml-auto badge-hit" title="Хит">
                                 <?php echo $this->renderPosition('hit', array(
                                     'style' => 'block'
                                 )); ?>
                             </div>
                         <?php endif; ?>
                         <?php if ($this->checkPosition('sale')) : ?>
-                            <div class="badge badge-danger ml-auto" title="Распродажа">
+                            <div class="badge badge-danger ml-auto badge-sale" title="Распродажа">
                                 <?php echo $this->renderPosition('sale', array(
                                     'style' => 'block'
                                 )); ?>
                             </div>
                         <?php endif; ?>
                         <?php if ($this->checkPosition('recomend')) : ?>
-                            <div class="badge badge-info ml-auto" title="Рекомендуем">
+                            <div class="badge badge-info ml-auto badge-recomend" title="Рекомендуем">
                                 <?php echo $this->renderPosition('recomend', array(
                                     'style' => 'block'
                                 )); ?>
@@ -55,7 +55,9 @@ defined('_JEXEC') or die('Restricted access');
                         <?php if ($this->checkPosition('pod-zakaz')) : ?>
                             <div class="badge badge-danger ml-auto" title="Под заказ">
                                 <?php echo $this->renderPosition('pod-zakaz', array(
-                                    'style' => 'block'
+                                    'style' => 'jbblock',
+                                    'tag' => 'span',
+                                    'wrapperTag' => 'span'
                                 )); ?>
                             </div>
                         <?php endif; ?>
@@ -66,57 +68,38 @@ defined('_JEXEC') or die('Restricted access');
     </div>
     <div class="card-body">
         <?php if ($this->checkPosition('title')) : ?>
-            <h4 class="item-title product-title text-primary"><?php echo $this->renderPosition('title'); ?></h4>
-        <?php endif; ?>
-
-        <?php if ($this->checkPosition('category')) : ?>
-            <h5 class="item-category product-category">
-                <?php echo $this->renderPosition('category'); ?>
-            </h5>
+            <h4 class="item-title product-title text-center"><?php echo $this->renderPosition('title'); ?></h4>
         <?php endif; ?>
 
         <?php if ($this->checkPosition('text')) : ?>
-            <div class="item-text row mb-1">
+            <div class="item-text row">
                 <div class="col-md-12 text-center">
-                    <?php echo $this->renderPosition('text', array(
-                        'style' => 'jbblock',
-                        'class' => 'sizes-block',
-                        'tag' => 'div',
-                        'wrapperTag' => 'div'
-                    )); ?>
+                    <?php echo $this->renderPosition('text', array('style' => 'block')); ?>
                 </div>
             </div>
         <?php endif; ?>
 
         <?php if ($this->checkPosition('properties')) : ?>
             <div class="item-properties">
-                <ul class="list-unstyled mb-1">
+                <ul class="unstyled">
                     <?php echo $this->renderPosition('properties', array('style' => 'list')); ?>
                 </ul>
             </div>
-            <hr class="my-2">
         <?php endif; ?>
 
-
-        <?php if ($this->checkPosition('price')) : ?>
-            <div class="row mb-3 align-items-center">
-                <div class="col-12 product-price-container">
+        <div class="row mb-0">
+            <?php if ($this->checkPosition('price')) : ?>
+                <div class="col-md-8 product-price-container">
                     <div class="item-price">
                         <?php echo $this->renderPosition('price', array('style' => 'block')); ?>
                     </div>
                 </div>
-            </div>
-        <?php endif; ?>
-
-
-
-        <?php if ($this->checkPosition('buttons')) : ?>
-            <div class="row align-items-center">
-                <div class="col-12 item-buttons">
+            <?php endif; ?>
+            <?php if ($this->checkPosition('buttons')) : ?>
+                <div class="col-md-4 item-buttons clearfix text-right">
                     <?php echo $this->renderPosition('buttons'); ?>
                 </div>
-            </div>
-        <?php endif; ?>
-
+            <?php endif; ?>
+        </div>
     </div>
 </div>

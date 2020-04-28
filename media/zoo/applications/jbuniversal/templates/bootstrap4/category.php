@@ -75,6 +75,10 @@ $this->app->jbdebug->mark('template::category::start');
                             $params = $child->getParams('site');
                             $itemsOrder = $params->get('config.item_order', 'none');
                             $maxItems = $params->get('template.subcategory_items_count', 6);
+
+                            if ($maxItems >= "10") {
+                                $maxItems = "10";
+                            }
                             // get items
                             $childitems = $this->app->table->item->getByCategory($child->getApplication()->id, $child->id, true, null, $itemsOrder, 0, $maxItems, false);
 

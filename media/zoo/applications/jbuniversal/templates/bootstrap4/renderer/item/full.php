@@ -22,7 +22,7 @@ $tabsId = $this->app->jbstring->getId('tabs');
 //$rowClass = $bootstrap->getRowClass();
 ?>
 
-    <div class="clearfix full-block">
+    <div class="full-block">
         <div class="row full-row">
             <div class="col-md-4 full-left">
                 <?php if ($this->checkPosition('image')) : ?>

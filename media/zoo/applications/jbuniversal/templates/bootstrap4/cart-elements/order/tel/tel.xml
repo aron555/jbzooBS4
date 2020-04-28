@@ -32,6 +32,9 @@
         <param name="access" type="zooaccesslevel" default="" label="JBZOO_ELEMENT_ACCESS"
                description="JBZOO_ELEMENT_ACCESS_DESC"/>
 
+        <param name="placeholder" type="text" default="" label="Плейсхолдер для инпута"
+               description="Плейсхолдер для инпута, если нужен"/>
+
     </params>
 
 </element>

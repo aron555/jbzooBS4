@@ -23,10 +23,17 @@ $items = $modHelper->getBasketItems(array(
 
 ?>
 <div class="jbzoo jbcart-module jsJBZooCartModule" id="<?php echo $modHelper->getModuleId(); ?>">
+    <?php
+    $title = '';
+    if ((int)$params->get('jbcart_totalsum', 1)) : ?>
+        <?php $title = '<div class="jbcart-module-line">' . JText::_('JBZOO_CART_MODULE_TOTAL_SUM') . ':<span class="jbcart-module-total-value">' . $order->getTotalSum()->html($currency) . '</span></div>'; ?>
+    <?php
+    endif
+    ?>
 
     <?php if ((int)$params->get('jbcart_button_gotocart', 1)): ?>
         <a rel="nofollow" class="jbcart-module-gotocart"
-           href="<?php echo $modHelper->getBasketUrl(); ?>" title="В корзину">
+           href="<?php echo $modHelper->getBasketUrl(); ?>" title='В корзину. <?= $title; ?>'>
 
             <i class="fas fa-cart-arrow-down fa-2x"></i>
 

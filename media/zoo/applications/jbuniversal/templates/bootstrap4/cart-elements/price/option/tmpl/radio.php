@@ -12,6 +12,16 @@
 // no direct access
 defined('_JEXEC') or die('Restricted access'); ?>
 
-<div id="block-parametrov" class="jbprice-option-radio ">
-    <?php echo $this->_jbhtml->radio($data, $this->getRenderName('value'), null, $this->getValue()); ?>
+<div class="jbprice-option-radio block-parametrov d-flex flex-column">
+
+    <?php
+    foreach ($data as $key => $item) {
+        $item2 = '<span>'.$item.'</span>';
+        //echo "<pre>";var_dump($item2);echo "</pre>";
+        $data[] = $item2;
+    }
+    ?>
+
+    <?php echo $this->_jbhtml->radio($data, $this->getRenderName('value'), null, $this->getValue(), false, false, true); ?>
+
 </div>
