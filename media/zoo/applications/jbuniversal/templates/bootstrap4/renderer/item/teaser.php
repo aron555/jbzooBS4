@@ -68,7 +68,7 @@ defined('_JEXEC') or die('Restricted access');
     </div>
     <div class="card-body d-flex align-items-end flex-column">
         <?php if ($this->checkPosition('title')) : ?>
-            <h4 class="item-title product-title text-center">
+            <h4 class="item-title product-title text-center h6">
                 <?php echo $this->renderPosition('title'); ?>
             </h4>
         <?php endif; ?>

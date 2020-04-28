@@ -23,6 +23,7 @@ $items = $modHelper->getBasketItems(array(
 
 ?>
 <div class="jbzoo jbcart-module jsJBZooCartModule" id="<?php echo $modHelper->getModuleId(); ?>">
+
     <?php
     $title = '';
     if ((int)$params->get('jbcart_totalsum', 1)) : ?>
@@ -33,14 +34,15 @@ $items = $modHelper->getBasketItems(array(
 
     <?php if ((int)$params->get('jbcart_button_gotocart', 1)): ?>
         <a rel="nofollow" class="jbcart-module-gotocart"
-           href="<?php echo $modHelper->getBasketUrl(); ?>" title='В корзину. <?= $title; ?>'>
+           href="<?php echo $modHelper->getBasketUrl(); ?>" data-html="true" data-toggle="tooltip" data-placement="bottom"
+           title="В корзину. <?= htmlspecialchars($title); ?>">
 
-            <i class="fas fa-cart-arrow-down fa-2x"></i>
+            <i class="flaticon-shopping-cart-1"></i>
 
             <!--<img src="/modules/mod_jbzoo_basket/assets/images/cart-icon.svg" alt="cart">-->
 
             <?php if (empty($items)) : ?>
-                <div class="jbcart-module-total-items jbcart-module-empty clearfix"><?php echo JText::_('JBZOO_CART_MODULE_EMPTY'); ?></div>
+                <div class="jbcart-module-total-items jbcart-module-empty"><?php echo JText::_('JBZOO_CART_MODULE_EMPTY'); ?></div>
             <?php else: ?>
 
                 <?php if ((int)$params->get('jbcart_items', 1)) : ?>
@@ -104,14 +106,6 @@ $items = $modHelper->getBasketItems(array(
                     <span class="jbcart-module-total-items">
                     <?php echo $order->getTotalCount() . ' ' . JText::_('JBZOO_CART_COUNT_ABR'); ?>
                     </span>
-                <?php endif ?>
-
-
-                <?php if ((int)$params->get('jbcart_totalsum', 1)) : ?>
-                    <div class="jbcart-module-line">
-                        <?php echo JText::_('JBZOO_CART_MODULE_TOTAL_SUM'); ?>:
-                        <span class="jbcart-module-total-value"><?php echo $order->getTotalSum()->html($currency); ?></span>
-                    </div>
                 <?php endif ?>
 
             <?php endif; ?>
