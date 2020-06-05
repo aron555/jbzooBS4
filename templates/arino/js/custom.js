@@ -54,18 +54,4 @@ jQuery(function ($) {
             $(this).toggleClass('animated pulse');
         })
     ;
-
-
-    /*LAZY*/
-    $(document).ready(function () {
-        $("img.jbimage").Lazy({
-            scrollDirection: 'vertical',
-            effect: 'fadeIn',
-            visibleOnly: true,
-            onError: function (element) {
-                console.log('error loading ' + element.data('src'));
-            }
-        });
-    });
-
 });

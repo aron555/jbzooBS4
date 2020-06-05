@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f244d11-9366-4602-9f0b-cb54a0e6b56a" name="Default Changelist" comment="" />
+    <list default="true" id="5f244d11-9366-4602-9f0b-cb54a0e6b56a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/search/zoocategory/model.categorysearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/search/zoocategory/model.categorysearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/arino/css/presets/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/arino/css/presets/default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/arino/css/template.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/arino/css/template.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/arino/headers/style-1/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/arino/headers/style-1/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/arino/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/arino/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/arino/scss/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/templates/arino/scss/custom.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/arino/scss/master.scss" beforeDir="false" afterPath="$PROJECT_DIR$/templates/arino/scss/master.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/arino/scss/theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/templates/arino/scss/theme.scss" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,46 +27,62 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/com_zoo/controllers/default.php">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp44482/www/dev15.smuzi-studio.ru/administrator/components/com_spmedical/models/department.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2112">
-              <caret line="273" column="83" selection-start-line="273" selection-start-column="83" selection-end-line="273" selection-end-column="83" />
+            <state relative-caret-position="-1243" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp24035/www/dev15.smuzi-studio.ru/modules/mod_spmedical_services/helper.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="34" column="29" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp24820/www/dev15.smuzi-studio.ru/modules/mod_spmedical_services/mod_spmedical_services.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="583">
-              <caret line="915" column="1" selection-start-line="915" selection-start-column="1" selection-end-line="915" selection-end-column="1" />
+            <state relative-caret-position="187">
+              <caret line="17" column="105" selection-start-line="17" selection-start-column="105" selection-end-line="17" selection-end-column="105" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/mod_jbzoo_basket/assets/less/cart-module.less">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp36588/www/dev15.smuzi-studio.ru/templates/shaper_medico/scss/custom.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+            <state relative-caret-position="578">
+              <caret line="169" column="3" lean-forward="true" selection-start-line="169" selection-start-column="3" selection-end-line="169" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp24628/www/workingtools.ru/media/zoo/applications/jbuniversal/templates/bootstrap/renderer/item/ymlexport.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="48" column="81" selection-start-line="48" selection-start-column="69" selection-end-line="48" selection-end-column="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp53887/www/workingtools.ru/media/zoo/applications/jbuniversal/templates/bootstrap/renderer/category/_default.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="321">
+              <caret line="34" selection-start-line="34" selection-end-line="36" selection-end-column="88" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp49675/www/workingtools.ru/plugins/search/zoocategory/model.categorysearch.php">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp29227/www/workingtools.ru/media/zoo/applications/jbuniversal/templates/bootstrap/renderer/item/full.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="347" column="42" selection-start-line="347" selection-start-column="42" selection-end-line="347" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/configuration.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="60" column="24" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="60" />
+            <state relative-caret-position="323">
+              <caret line="31" column="108" selection-start-line="31" selection-start-column="108" selection-end-line="31" selection-end-column="108" />
             </state>
           </provider>
         </entry>
@@ -64,18 +91,43 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>col</find>
-      <find>caret</find>
-      <find>active</find>
-      <find>#sp-menu-left</find>
-      <find>sp-module-content</find>
-      <find>hover</find>
-      <find>$expanded</find>
-      <find>/tmp/*</find>
+      <find>sp-megamenu-parent</find>
+      <find>spmedical-departments</find>
+      <find>sp-slider-btn-text</find>
+      <find>custom-combobox</find>
+      <find>MOD_SPMEDICAL_SEARCH_DEPARTMENTS</find>
+      <find>custom-combobox-input</find>
+      <find>preset</find>
+      <find>.header-wrapper</find>
+      <find>data-original-title</find>
+      <find>show</find>
+      <find>sppb-btn.sppb-btn-primary</find>
+      <find>.popul .image_wrapper_block img</find>
+      <find>$arViewedIDs</find>
+      <find>$GLOBALS</find>
+      <find>size</find>
+      <find>arrFilterViewed</find>
+      <find>sp-bottom</find>
+      <find>ym</find>
+      <find>ym(</find>
+      <find>null</find>
+      <find>getlist</find>
+      <find>resi</find>
+      <find>$bParent</find>
+      <find>LINKED_PRODUCTS_PROPERTY</find>
+      <find>CFile</find>
+      <find>img-fluid</find>
+      <find>cur {</find>
+      <find>top-right</find>
+      <find>$custom_styles</find>
+      <find>sp-top3</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>col-12 col-md-3</replace>
+      <replace>length !== 0</replace>
+      <replace>.length !== 0</replace>
+      <replace>background: transparent</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -84,52 +136,74 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/AppData/Local/Temp/scp46750/www/workingtools.ru/.htaccess" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp25816/www/workingtools.ru/media/zoo/applications/jbuniversal/templates/bootstrap/cart-elements/price/buttons/tmpl/add.php" />
-        <option value="$PROJECT_DIR$/modules/mod_jbzoo_accordion/tmpl/accordion/style.css" />
-        <option value="$PROJECT_DIR$/modules/mod_jbzoo_accordion/tmpl/accordion/script.js" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp37099/www/workingtools.ru/media/zoo/applications/jbuniversal/templates/bootstrap/renderer/basket/_table.php" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp21103/www/workingtools.ru/media/zoo/applications/jbuniversal/cart-elements/shipping/simplecalc/simplecalc.xml" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp21487/www/workingtools.ru/media/zoo/applications/jbuniversal/cart-elements/shipping/simplecalc/simplecalc.php" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp57424/www/workingtools.ru/modules/mod_jbzoo_accordion/tmpl/all.php" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp41640/www/workingtools.ru/modules/mod_jbzoo_accordion/tmpl/dropdown.php" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp51095/www/workingtools.ru/modules/mod_jbzoo_accordion/tmpl/accordion.php" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp47622/www/workingtools.ru/modules/mod_jbzoo_accordion/tmpl/dropdown/style.css" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp19560/www/workingtools.ru/modules/mod_jbzoo_accordion/tmpl/accordion/script.js" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp21465/www/workingtools.ru/modules/mod_jbzoo_accordion/tmpl/accordion/style.css" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp19135/www/workingtools.ru/modules/mod_jbzoo_accordion/tmpl/toggle.js" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp24773/www/workingtools.ru/templates/arino/scss/custom.scss" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp43056/www/workingtools.ru/modules/mod_jbzoo_accordion/tmpl/dropdown/script.js" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp19102/www/workingtools.ru/modules/mod_jbzoo_accordion/tmpl/megamenu/style.css" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp16370/www/workingtools.ru/modules/mod_jbzoo_accordion/tmpl/megamenu.php" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp19561/www/workingtools.ru/modules/mod_jbzoo_accordion/tmpl/megamenu/script.js" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp19992/www/workingtools.ru/modules/mod_jbzoo_accordion/helper.php" />
-        <option value="$PROJECT_DIR$/components/com_zoo/controllers/default.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/modules/mod_jbzoo_basket/assets/less/cart-module.less" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp36491/www/dev14.smuzi-studio.ru/plugins/search/zoocategory/model.categorysearch.php" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp40995/www/dev5.smuzi-studio.ru/plugins/search/zoocategory/model.categorysearch.php" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp49675/www/workingtools.ru/plugins/search/zoocategory/model.categorysearch.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp38673/home/f/fv2078ft/fapsiz.ru/public_html/brands/tk-rim/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp39511/home/f/fv2078ft/fapsiz.ru/public_html/brands/tatvoylok/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp40014/home/f/fv2078ft/fapsiz.ru/public_html/brands/summitech-professional/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp40250/home/f/fv2078ft/fapsiz.ru/public_html/brands/stoik/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp41112/home/f/fv2078ft/fapsiz.ru/public_html/brands/step/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp41690/home/f/fv2078ft/fapsiz.ru/public_html/brands/sperian/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp41459/home/f/fv2078ft/fapsiz.ru/public_html/brands/skydda/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp42574/home/f/fv2078ft/fapsiz.ru/public_html/brands/rosomz/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp42402/home/f/fv2078ft/fapsiz.ru/public_html/brands/respiratornyy-kompleks/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp43024/home/f/fv2078ft/fapsiz.ru/public_html/brands/rasaa/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp43277/home/f/fv2078ft/fapsiz.ru/public_html/brands/rabber/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp44001/home/f/fv2078ft/fapsiz.ru/public_html/brands/pskov-polimer/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp44079/home/f/fv2078ft/fapsiz.ru/public_html/brands/oskata-m/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp44125/home/f/fv2078ft/fapsiz.ru/public_html/brands/oranta/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp45519/home/f/fv2078ft/fapsiz.ru/public_html/brands/niks/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp45578/home/f/fv2078ft/fapsiz.ru/public_html/brands/miolar/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp46563/home/f/fv2078ft/fapsiz.ru/public_html/brands/l-brador/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp01253/home/f/fv2078ft/fapsiz.ru/public_html/brands/honeywell/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp47196/home/f/fv2078ft/fapsiz.ru/public_html/brands/fap/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp47013/home/f/fv2078ft/fapsiz.ru/public_html/brands/fabrika-obuvi-tsso/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp47146/home/f/fv2078ft/fapsiz.ru/public_html/brands/dyuna-ast/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp48571/home/f/fv2078ft/fapsiz.ru/public_html/brands/bogorodskaya-spetsialnaya-obuv/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp49971/home/f/fv2078ft/fapsiz.ru/public_html/brands/avers/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp49814/home/f/fv2078ft/fapsiz.ru/public_html/brands/ao-kimrskaya-fabrika-im-gorkogo/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp50243/home/f/fv2078ft/fapsiz.ru/public_html/brands/ansell/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp50044/home/f/fv2078ft/fapsiz.ru/public_html/brands/amparo/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp51688/home/f/fv2078ft/fapsiz.ru/public_html/brands/3m/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp52718/home/f/fv2078ft/fapsiz.ru/public_html/brands/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp33444/home/f/fv2078ft/fapsiz.ru/public_html/brands/items_brands.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp49707/new/public_html/bitrix/templates/aspro_mshop/components/bitrix/catalog.section.list/internal_sections_list/template.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp53707/new/public_html/bitrix/templates/aspro_mshop/css/custom.css" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp21819/new/public_html/.htaccess" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp33593/www/workingtools.ru/media/zoo/applications/jbuniversal/templates/bootstrap/elements/jbimage/jbimage.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp39308/www/workingtools.ru/media/zoo/applications/jbuniversal/templates/bootstrap/renderer/item/positions.xml" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp39516/www/workingtools.ru/media/zoo/applications/jbuniversal/templates/bootstrap/renderer/item/full.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp39721/www/workingtools.ru/media/zoo/applications/jbuniversal/templates/bootstrap/renderer/item/teaser.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp49032/www/workingtools.ru/templates/arino/scss/custom.scss" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp26617/www/dev15.smuzi-studio.ru/modules/mod_spmedical_services/mod_spmedical_services.xml" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp24035/www/dev15.smuzi-studio.ru/modules/mod_spmedical_services/helper.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp40349/www/dev15.smuzi-studio.ru/administrator/components/com_spmedical/models/forms/department.xml" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp18289/www/dev15.smuzi-studio.ru/components/com_spmedical/views/departments/tmpl/default.xml" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp24622/www/dev15.smuzi-studio.ru/modules/mod_spmedical_services/tmpl/default.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp24820/www/dev15.smuzi-studio.ru/modules/mod_spmedical_services/mod_spmedical_services.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp31814/www/dev15.smuzi-studio.ru/templates/shaper_medico/sppagebuilder/addons/tab/site.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp50021/new/public_html/bitrix/templates/aspro_mshop/css/custom.css" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp47864/new/public_html/bitrix/templates/aspro_mshop/components/bitrix/news.list/shops_front/template.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp36588/www/dev15.smuzi-studio.ru/templates/shaper_medico/scss/custom.scss" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp24628/www/workingtools.ru/media/zoo/applications/jbuniversal/templates/bootstrap/renderer/item/ymlexport.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp44676/www/workingtools.ru/media/zoo/applications/jbuniversal/templates/bootstrap/category.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp53887/www/workingtools.ru/media/zoo/applications/jbuniversal/templates/bootstrap/renderer/category/_default.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp29227/www/workingtools.ru/media/zoo/applications/jbuniversal/templates/bootstrap/renderer/item/full.php" />
       </list>
     </option>
+  </component>
+  <component name="JoomlaConfiguration" enabled="true">
+    <joomlaConfigPath>D:\OSPanel\domains\joomla.test\configuration.php</joomlaConfigPath>
+    <joomlaPath>D:\OSPanel\domains\joomla.test</joomlaPath>
   </component>
   <component name="PhpDebugGeneral" xdebug_force_break_when_no_path_mapping="false" xdebug_force_break_when_outside_project="false" />
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.1" />
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/jbbs4.test.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/deployment.xml" />
-        <option value="$PROJECT_DIR$/.idea/php.xml" />
-      </list>
-    </option>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.1">
+    <include_path>
+      <path value="$PROJECT_DIR$/../joomla.test" />
+      <path value="$PROJECT_DIR$/../joomla.test" />
+    </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="18" />
-    <option name="y" value="114" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="y" value="11" />
     <option name="width" value="1612" />
     <option name="height" value="856" />
   </component>
@@ -137,111 +211,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="jbbs4.test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jbbs4.test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jbbs4.test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jbbs4.test" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jbbs4.test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jbbs4.test" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="mod_jbzoo_accordion" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jbbs4.test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jbbs4.test" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="mod_jbzoo_accordion" type="462c0819:PsiDirectoryNode" />
-              <item name="tmpl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jbbs4.test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jbbs4.test" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="mod_jbzoo_accordion" type="462c0819:PsiDirectoryNode" />
-              <item name="tmpl" type="462c0819:PsiDirectoryNode" />
-              <item name="accordion" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jbbs4.test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jbbs4.test" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="mod_jbzoo_basket" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jbbs4.test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jbbs4.test" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="mod_jbzoo_basket" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jbbs4.test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jbbs4.test" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="mod_jbzoo_basket" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="less" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jbbs4.test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jbbs4.test" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jbbs4.test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jbbs4.test" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jbbs4.test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jbbs4.test" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
-              <item name="zoosearch" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jbbs4.test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jbbs4.test" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jbbs4.test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jbbs4.test" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="arino" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jbbs4.test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jbbs4.test" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="arino" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jbbs4.test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jbbs4.test" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="arino" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="mod_jbzoo_basket" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -252,7 +222,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/components/com_zoo/controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../joomla.test/configuration.php" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Generic SQL" />
@@ -284,25 +254,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582103559023</updated>
-      <workItem from="1582103563435" duration="29828000" />
+      <workItem from="1582103563435" duration="32619000" />
+      <workItem from="1586529267289" duration="4125000" />
+      <workItem from="1589841762604" duration="8601000" />
+      <workItem from="1590478977604" duration="65068000" />
+      <workItem from="1590750507791" duration="4945000" />
+      <workItem from="1591085562003" duration="37902000" />
+      <workItem from="1591252643828" duration="25256000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29828000" />
+    <option name="totallyTimeSpent" value="178516000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24935733" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25899744" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -310,246 +281,340 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Remote Host" weight="0.32969153" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" weight="0.32969153" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25899744" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" weight="0.32969153" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/components/com_zoo/controllers/default-mod.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp58096/www/workingtools.ru/templates/arino/index.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/mod_jbzoo_accordion/tmpl/accordion/style.css">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp11053/new/public_html/poleznaya-informacziya/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="21" />
+        <state relative-caret-position="-2212" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp11412/new/public_html/poleznaya-informacziya/tablicza-razmerov/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4439" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp13741/home/f/fv2078ft/fapsiz.ru/public_html/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="47" selection-start-line="47" selection-end-line="48" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/mod_jbzoo_accordion/tmpl/accordion/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="4" selection-end-column="123" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp14957/www/tkrim.ru/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2074">
-          <caret line="122" selection-start-line="122" selection-end-line="123" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp25816/www/workingtools.ru/media/zoo/applications/jbuniversal/templates/bootstrap/cart-elements/price/buttons/tmpl/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="22" column="105" lean-forward="true" selection-start-line="22" selection-start-column="105" selection-end-line="22" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp46750/www/workingtools.ru/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="53" column="71" lean-forward="true" selection-start-line="53" selection-start-column="71" selection-end-line="53" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/web/jbzoo/Калькулятор доставки/simplecalc/simplecalc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="982">
-          <caret line="85" column="4" selection-start-line="85" selection-start-column="4" selection-end-line="88" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp21487/www/workingtools.ru/media/zoo/applications/jbuniversal/cart-elements/shipping/simplecalc/simplecalc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="31" column="7" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp21103/www/workingtools.ru/media/zoo/applications/jbuniversal/cart-elements/shipping/simplecalc/simplecalc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp37099/www/workingtools.ru/media/zoo/applications/jbuniversal/templates/bootstrap/renderer/basket/_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp57424/www/workingtools.ru/modules/mod_jbzoo_accordion/tmpl/all.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp47622/www/workingtools.ru/modules/mod_jbzoo_accordion/tmpl/dropdown/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp43056/www/workingtools.ru/modules/mod_jbzoo_accordion/tmpl/dropdown/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp16370/www/workingtools.ru/modules/mod_jbzoo_accordion/tmpl/megamenu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp24773/www/workingtools.ru/templates/arino/scss/custom.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="339" column="23" selection-start-line="339" selection-start-column="23" selection-end-line="339" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp21465/www/workingtools.ru/modules/mod_jbzoo_accordion/tmpl/accordion/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp19560/www/workingtools.ru/modules/mod_jbzoo_accordion/tmpl/accordion/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp51095/www/workingtools.ru/modules/mod_jbzoo_accordion/tmpl/accordion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" column="168" selection-start-line="27" selection-start-column="150" selection-end-line="27" selection-end-column="168" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp41640/www/workingtools.ru/modules/mod_jbzoo_accordion/tmpl/dropdown.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" column="137" selection-start-line="27" selection-start-column="137" selection-end-line="27" selection-end-column="155" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp19135/www/workingtools.ru/modules/mod_jbzoo_accordion/tmpl/toggle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="37" column="31" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp19561/www/workingtools.ru/modules/mod_jbzoo_accordion/tmpl/megamenu/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="66" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp19102/www/workingtools.ru/modules/mod_jbzoo_accordion/tmpl/megamenu/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp19992/www/workingtools.ru/modules/mod_jbzoo_accordion/helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="148" column="34" selection-start-line="148" selection-start-column="34" selection-end-line="148" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/web/extensions/extensions/components/com_zoo/controllers/default.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="237" column="8" selection-start-line="237" selection-start-column="8" selection-end-line="274" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_zoo/controllers/default.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2112">
-          <caret line="273" column="83" selection-start-line="273" selection-start-column="83" selection-end-line="273" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configuration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="60" column="24" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="915" column="1" selection-start-line="915" selection-start-column="1" selection-end-line="915" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp35992/www/dev14.smuzi-studio.ru/templates/arino/html/com_search/search/default_error.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp35196/www/dev14.smuzi-studio.ru/templates/arino/html/com_search/search/default.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-55" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp35947/www/dev14.smuzi-studio.ru/templates/arino/html/com_search/search/default_results.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp40995/www/dev5.smuzi-studio.ru/plugins/search/zoocategory/model.categorysearch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="347" column="42" selection-start-line="347" selection-start-column="42" selection-end-line="347" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp36491/www/dev14.smuzi-studio.ru/plugins/search/zoocategory/model.categorysearch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="346" column="8" selection-start-line="346" selection-start-column="8" selection-end-line="347" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp36455/www/dev14.smuzi-studio.ru/plugins/search/zoocategory/zoocategory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-752" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/mod_jbzoo_basket/assets/less/cart-module.less">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp32680/www/dev14.smuzi-studio.ru/media/zoo/applications/jbuniversal/templates/bootstrap4/elements/jbimage/jbimage.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <caret line="199" column="42" selection-end-line="643" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp49675/www/workingtools.ru/plugins/search/zoocategory/model.categorysearch.php">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp30770/www/dev14.smuzi-studio.ru/media/zoo/applications/jbuniversal/elements/jbimage/jbimage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="347" column="42" selection-start-line="347" selection-start-column="42" selection-end-line="347" selection-end-column="42" />
+        <state relative-caret-position="-7987" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp53707/new/public_html/bitrix/templates/aspro_mshop/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp33593/www/workingtools.ru/media/zoo/applications/jbuniversal/templates/bootstrap/elements/jbimage/jbimage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="661">
+          <caret line="643" column="1" selection-start-line="643" selection-start-column="1" selection-end-line="643" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp39308/www/workingtools.ru/media/zoo/applications/jbuniversal/templates/bootstrap/renderer/item/positions.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp39516/www/workingtools.ru/media/zoo/applications/jbuniversal/templates/bootstrap/renderer/item/full.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp39721/www/workingtools.ru/media/zoo/applications/jbuniversal/templates/bootstrap/renderer/item/teaser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="44" column="26" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp49032/www/workingtools.ru/templates/arino/scss/custom.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp49753/www/dev14.smuzi-studio.ru/templates/arino/scss/custom.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="664" column="20" selection-start-line="664" selection-start-column="11" selection-end-line="664" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp50417/www/dev14.smuzi-studio.ru/templates/arino/scss/jbzoo.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp50538/www/dev14.smuzi-studio.ru/templates/arino/scss/aron.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="264" selection-start-line="264" selection-end-line="267" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp39825/www/dev14.smuzi-studio.ru/media/zoo/applications/jbuniversal/templates/bootstrap4/renderer/item/positions.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="53" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp39107/www/dev14.smuzi-studio.ru/media/zoo/applications/jbuniversal/templates/bootstrap4/renderer/item/full.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="72" column="31" selection-start-line="29" selection-start-column="16" selection-end-line="72" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp39656/www/dev14.smuzi-studio.ru/media/zoo/applications/jbuniversal/templates/bootstrap4/renderer/item/teaser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp34151/www/dev15.smuzi-studio.ru/administrator/components/com_spmedical/spmedical.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp29243/www/dev15.smuzi-studio.ru/administrator/components/com_spmedical/views/departments/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1377" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp33271/www/dev15.smuzi-studio.ru/administrator/components/com_spmedical/views/departments/view.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-612" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp39851/www/dev15.smuzi-studio.ru/administrator/components/com_spmedical/models/forms/filter_departments.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp16884/www/dev15.smuzi-studio.ru/components/com_spmedical/views/departments/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp45503/www/dev15.smuzi-studio.ru/administrator/components/com_spmedical/tables/department.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="35" column="48" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp26617/www/dev15.smuzi-studio.ru/modules/mod_spmedical_services/mod_spmedical_services.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="31" column="62" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp40349/www/dev15.smuzi-studio.ru/administrator/components/com_spmedical/models/forms/department.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="25" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp18289/www/dev15.smuzi-studio.ru/components/com_spmedical/views/departments/tmpl/default.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp44482/www/dev15.smuzi-studio.ru/administrator/components/com_spmedical/models/department.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1243" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../joomla.test/libraries/classmap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="250" column="24" selection-start-line="250" selection-start-column="24" selection-end-line="250" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp24035/www/dev15.smuzi-studio.ru/modules/mod_spmedical_services/helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp34762/www/dev15.smuzi-studio.ru/administrator/components/com_spmedical/helpers/spmedical.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp32067/www/dev15.smuzi-studio.ru/administrator/components/com_spmedical/views/department/view.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp31817/www/dev15.smuzi-studio.ru/administrator/components/com_spmedical/views/department/tmpl/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp34335/www/dev15.smuzi-studio.ru/administrator/components/com_spmedical/spmedical.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp46171/www/dev15.smuzi-studio.ru/administrator/components/com_spmedical/controllers/department.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp24622/www/dev15.smuzi-studio.ru/modules/mod_spmedical_services/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="64" lean-forward="true" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp34688/www/dev15.smuzi-studio.ru/administrator/components/com_spmedical/controller.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp04690/new/public_html/bitrix/templates/aspro_mshop/components/bitrix/news.list/shops/result_modifier.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp03553/new/public_html/bitrix/templates/aspro_mshop/components/bitrix/news.list/shops/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp47864/new/public_html/bitrix/templates/aspro_mshop/components/bitrix/news.list/shops_front/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="40" column="58" lean-forward="true" selection-start-line="37" selection-start-column="48" selection-end-line="40" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp12752/new/public_html/bitrix/templates/aspro_mshop/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp50021/new/public_html/bitrix/templates/aspro_mshop/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp31814/www/dev15.smuzi-studio.ru/templates/shaper_medico/sppagebuilder/addons/tab/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp24820/www/dev15.smuzi-studio.ru/modules/mod_spmedical_services/mod_spmedical_services.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="105" selection-start-line="17" selection-start-column="105" selection-end-line="17" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp22141/www/workingtools.ru/media/zoo/applications/jbuniversal/templates/bootstrap/ymlexport.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp36588/www/dev15.smuzi-studio.ru/templates/shaper_medico/scss/custom.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="169" column="3" lean-forward="true" selection-start-line="169" selection-start-column="3" selection-end-line="169" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp44673/www/dvery-pro.ru/media/zoo/applications/jbuniversal/templates/bootstrap/renderer/item/full.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp52320/www/dvery-pro.ru/media/zoo/applications/jbuniversal/templates/bootstrap/renderer/category/_default.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp24628/www/workingtools.ru/media/zoo/applications/jbuniversal/templates/bootstrap/renderer/item/ymlexport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="48" column="81" selection-start-line="48" selection-start-column="69" selection-end-line="48" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp44676/www/workingtools.ru/media/zoo/applications/jbuniversal/templates/bootstrap/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="245" column="27" lean-forward="true" selection-start-line="245" selection-start-column="27" selection-end-line="245" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp53887/www/workingtools.ru/media/zoo/applications/jbuniversal/templates/bootstrap/renderer/category/_default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="34" selection-start-line="34" selection-end-line="36" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp29227/www/workingtools.ru/media/zoo/applications/jbuniversal/templates/bootstrap/renderer/item/full.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="31" column="108" selection-start-line="31" selection-start-column="108" selection-end-line="31" selection-end-column="108" />
         </state>
       </provider>
     </entry>
