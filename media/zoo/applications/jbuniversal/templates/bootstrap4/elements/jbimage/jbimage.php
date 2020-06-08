@@ -196,33 +196,28 @@ class ElementJBImage extends ElementRepeatable implements iRepeatSubmittable
 
             $unique = $params->get('_layout') . '_' . $this->_item->id . '_' . $this->identifier;
 
-            $src = $this->_jbimage->resize($image->orig, '50px', '50px');
-
-            if ($this->_getDefaultImage($params)) {
-                $src = $this->_getDefaultImage($params)->url;
-            }
-
-
+            //$src = $this->_getDefaultImage($params)->url;
+            $src = $this->_jbimage->resize($image->orig, $image->width/2, $image->height/2)->url;
 
             return $this->renderLayout($layout, array(
                     'imageAttrs' => $this->_buildAttrs(array(
-                            'class'         => $imgClass . ' ' . $unique,
-                            'alt'           => $alt,
-                            'title'         => $title,
-                            'src'           => $src,
-                            'data-src'      => $image->url,
-                            'width'         => $image->width,
-                            'height'        => $image->height,
-                            'data-template' => $template
-                        )),
+                        'class'         => $imgClass . ' ' . $unique,
+                        'alt'           => $alt,
+                        'title'         => $title,
+                        'src'           => $src,
+                        'data-src'      => $image->url,
+                        'width'         => $image->width,
+                        'height'        => $image->height,
+                        'data-template' => $template
+                    )),
                     'linkAttrs'  => $this->_buildAttrs(array(
-                            'class'  => 'jbimage-link ' . $appendClass . ' ' . $unique,
-                            'title'  => $title,
-                            'href'   => $url,
-                            'rel'    => $rel,
-                            'target' => $target,
-                            'id'     => uniqid('jbimage-link-'),
-                        )),
+                        'class'  => 'jbimage-link ' . $appendClass . ' ' . $unique,
+                        'title'  => $title,
+                        'href'   => $url,
+                        'rel'    => $rel,
+                        'target' => $target,
+                        'id'     => uniqid('jbimage-link-'),
+                    )),
                     'link'       => $url,
                     'image'      => $image
                 )
