@@ -20,6 +20,39 @@ defined('_JEXEC') or die('Restricted access');
 $tabsId = $this->app->jbstring->getId('tabs');
 //$bootstrap = $this->app->jbbootstrap;
 //$rowClass = $bootstrap->getRowClass();
+
+
+/*item meta hack*/
+$document = JFactory::getDocument();
+$document->setGenerator('');
+$document->setMetadata('author', '');
+
+$city = 'Подольске';
+$tel = '+7 (999) 395-40-43';
+$nameSite = 'Двери Вам';
+$descPosition = 'description';
+$titleLow = mb_strtolower($item->name); // для материала
+$descFull = "Заказать ".$titleLow." с доставкой по выгодной цене в ".$city." в интернет магазине ".$nameSite.". ".$tel;
+$descCat = !empty($this->renderPosition($descPosition)) ? ' '.strip_tags($this->renderPosition($descPosition)) : '';
+$descTrim = mb_strimwidth($descFull.$descCat, 0, 250, "...");
+if (empty($item->getParams()->get('metadata.title'))) {
+    $doc->setTitle("Купить " . $titleLow . " с доставкой по выгодной цене в " . $city); // заголовок
+}
+if (empty($item->getParams()->get('metadata.description'))) {
+    $doc->setDescription($descTrim); // описание
+}
+if (empty($item->getParams()->get('metadata.keywords'))) {
+    $doc->setMetaData('keywords', "Заказать " . $titleLow . ", " . $titleLow . " с доставкой, " . $titleLow . " по выгодной цене, " . $titleLow . " в " . $city);
+}// ключевые слова
+
+$document->setMetaData('og:title', $item->name);
+$document->setMetaData('og:type', 'website');
+
+//$document->setMetaData( 'og:image', 'http://ssss/images/logo.png');
+$document->setMetaData('og:site_name', $nameSite);
+$document->setMetaData('og:description', $item->name);
+
+/*EO item meta hack*/
 ?>
 
     <div class="full-block">
