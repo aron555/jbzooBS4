@@ -25,6 +25,21 @@ $subTitle = $this->app->string->trim($vars['params']->get('content.category_subt
 $image    = $this->app->jbimage->get('category_image', $vars['params']);
 $title    = $title ? $title : $category->name;
 
+/*category meta hack*/
+$city = 'Екатеринбурге';
+$tel = '+7 (343) 247-24-60';
+$nameSite = 'УралСизТорг';
+$titleLow = mb_strtolower($title);
+$descFull = "Заказать ".$titleLow." с доставкой по выгодной цене в ".$city." в интернет магазине ".$nameSite.". ".$tel;
+$descCat = !empty($category->description) ? ' '.strip_tags($category->description) : '';
+$descTrim = mb_strimwidth($descFull.$descCat, 0, 250, "...");
+$doc = JFactory::getDocument();
+$doc->setTitle("Купить ".$titleLow." с доставкой по выгодной цене в ".$city); // заголовок
+$doc->setDescription($descTrim); // описание
+$doc->setMetaData('keywords', "Заказать ".$titleLow.", ".$titleLow." с доставкой, ".$titleLow." по выгодной цене, ".$titleLow." в ".$city); // ключевые слова
+//var_dump($title);
+/* EO category meta hack*/
+
 if ((int)$vars['params']->get('template.category_show', 1)) : ?>
     <div class="category pt-0 pl-0 alias-<?php echo $category->alias; ?> ">
 
