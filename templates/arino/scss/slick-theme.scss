@@ -44,11 +44,11 @@ $slick-font-weight: 900 !default;
 
 /* Slider */
 
-.slick-list {
+/*.slick-list {
     .slick-loading & {
         background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
     }
-}
+}*/
 
 /* Icons */
 @if $slick-font-family == "slick" {
