@@ -175,6 +175,7 @@ if ($custom_js = $this->params->get('custom_js'))
     $css = JURI::base().'templates/'.$app->getTemplate().'/css/';
     ?>
     <link href="<?= $css.'font-awesome.min.css' ?>" rel="stylesheet" type="text/css">
+    <link href="<?= $css.'jquery-ui.min.css' ?>" rel="stylesheet" type="text/css">
 
     <script>
         let $ = jQuery.noConflict();
@@ -183,6 +184,7 @@ if ($custom_js = $this->params->get('custom_js'))
     <script src="<?= $js.'slick.min.js' ?>"></script>
     <script src="<?= $js.'yall.min.js' ?>"></script>
     <script src="<?= $js.'main.js' ?>"></script>
+    <script src="<?= $js.'jquery-ui.min.js' ?>"></script>
 
     </body>
 </html>
