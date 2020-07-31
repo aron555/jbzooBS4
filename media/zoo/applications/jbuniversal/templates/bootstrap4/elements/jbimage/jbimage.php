@@ -116,34 +116,41 @@ class ElementJBImage extends ElementRepeatable implements iRepeatSubmittable
         if ($this->_isFileExists($this->get('file'))) {
             $image = $this->_jbimage->resize($this->get('file'), $width, $height);
 
-            $file = $image->path;
+            $ua = $_SERVER["HTTP_USER_AGENT"];      // Get user-agent of browser
 
-            $info = pathinfo($file);
+            $safariorchrome = strpos($ua, 'Safari') ? true : false;     // Браузер - это либо Safari, либо Chrome (поскольку Chrome User-Agent включает в себя слово "Safari")
+            $chrome = strpos($ua, 'Chrome') ? true : false;             // Браузер - Chrome +
 
-            $mime = mime_content_type($file);
+            if (($safariorchrome == true AND $chrome == true)) {
+                $file = $image->path;
 
-            $noWebp = false;
+                $info = pathinfo($file);
 
-            if ($mime == "image/jpeg") {
-                $noWebp = @ImageCreateFromJpeg($file);
-            }
+                $mime = mime_content_type($file);
 
-            if ($mime == "image/png") {
-                $noWebp = @imageCreateFromPng($file);
-            }
+                $noWebp = false;
 
-            if ($noWebp != false)
-            {
-                $tmpWebp = $info['dirname'] . '/' . $info['filename'] . '.' . 'webp';
-
-                $isWebp = imageWebp($noWebp, $tmpWebp, 100);
-
-                if ($isWebp) {
-                    $image->path = $tmpWebp;
-                    $image->url = $this->_jbimage->getUrl($image->path);
+                if ($mime == "image/jpeg") {
+                    $noWebp = @ImageCreateFromJpeg($file);
                 }
 
-                imagedestroy($noWebp);
+                if ($mime == "image/png") {
+                    $noWebp = @imageCreateFromPng($file);
+                }
+
+                if ($noWebp != false)
+                {
+                    $tmpWebp = $info['dirname'] . '/' . $info['filename'] . '.' . 'webp';
+
+                    $isWebp = imageWebp($noWebp, $tmpWebp, 100);
+
+                    if ($isWebp) {
+                        $image->path = $tmpWebp;
+                        $image->url = $this->_jbimage->getUrl($image->path);
+                    }
+
+                    imagedestroy($noWebp);
+                }
             }
 
         } else {
