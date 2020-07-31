@@ -142,7 +142,7 @@ class ElementJBImage extends ElementRepeatable implements iRepeatSubmittable
                 {
                     $tmpWebp = $info['dirname'] . '/' . $info['filename'] . '.' . 'webp';
 
-                    $isWebp = imageWebp($noWebp, $tmpWebp, 100);
+                    $isWebp = imageWebp($noWebp, $tmpWebp, 80);
 
                     if ($isWebp) {
                         $image->path = $tmpWebp;
