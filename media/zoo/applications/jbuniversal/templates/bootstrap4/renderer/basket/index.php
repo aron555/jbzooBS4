@@ -75,7 +75,7 @@ $view = $this->getView();
 
 <script>
     jQuery(function($){
-        $('input[type=radio]').change(function() {
+        $('input[type=radio]').on('change', function() {
 
             //только для корзины Оплатить сбербанк
             if (this.value === "00ee9906-39f8-49c5-8304-64339b0482ae") {
