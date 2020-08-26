@@ -73,7 +73,7 @@ $view = $this->getView();
         ?>
     </form>
 
-<script>
+<!--<script>
     jQuery(function($){
         $('input[type=radio]').on('change', function() {
 
@@ -85,6 +85,6 @@ $view = $this->getView();
             }
         });
     });
-</script>
+</script>-->
 
 <?php endif;

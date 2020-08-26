@@ -34,9 +34,18 @@ $descFull = "Заказать ".$titleLow." с доставкой по выго�
 $descCat = !empty($category->description) ? ' '.strip_tags($category->description) : '';
 $descTrim = mb_strimwidth($descFull.$descCat, 0, 250, "...");
 $doc = JFactory::getDocument();
-$doc->setTitle("Купить ".$titleLow." с доставкой по выгодной цене в ".$city); // заголовок
-$doc->setDescription($descTrim); // описание
-$doc->setMetaData('keywords', "Заказать ".$titleLow.", ".$titleLow." с доставкой, ".$titleLow." по выгодной цене, ".$titleLow." в ".$city); // ключевые слова
+if (empty($vars['params']["metadata.title"])) {
+    $doc->setTitle("Купить ".$titleLow." с доставкой по выгодной цене в ".$city); // заголовок
+}
+
+if (empty($vars['params']["metadata.description"])) {
+    $doc->setDescription($descTrim); // описание
+}
+
+if (empty($vars['params']["metadata.keywords"])) {
+    $doc->setMetaData('keywords', "Заказать ".$titleLow.", ".$titleLow." с доставкой, ".$titleLow." по выгодной цене, ".$titleLow." в ".$city); // ключевые слова $doc->setDescription($descTrim); // описание
+}
+
 //var_dump($title);
 /* EO category meta hack*/
 

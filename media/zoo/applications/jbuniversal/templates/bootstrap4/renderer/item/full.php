@@ -36,13 +36,13 @@ $descFull = "Заказать " . $titleLow . " с доставкой по вы�
 $descCat = !empty($this->renderPosition($descPosition)) ? ' ' . strip_tags($this->renderPosition($descPosition)) : '';
 $descTrim = mb_strimwidth($descFull . $descCat, 0, 250, "...");
 if (empty($item->getParams()->get('metadata.title'))) {
-    $doc->setTitle("Купить " . $titleLow . " с доставкой по выгодной цене в " . $city); // заголовок
+    $document->setTitle("Купить " . $titleLow . " с доставкой по выгодной цене в " . $city); // заголовок
 }
 if (empty($item->getParams()->get('metadata.description'))) {
-    $doc->setDescription($descTrim); // описание
+    $document->setDescription($descTrim); // описание
 }
 if (empty($item->getParams()->get('metadata.keywords'))) {
-    $doc->setMetaData('keywords', "Заказать " . $titleLow . ", " . $titleLow . " с доставкой, " . $titleLow . " по выгодной цене, " . $titleLow . " в " . $city);
+    $document->setMetaData('keywords', "Заказать " . $titleLow . ", " . $titleLow . " с доставкой, " . $titleLow . " по выгодной цене, " . $titleLow . " в " . $city);
 }// ключевые слова
 
 $document->setMetaData('og:title', $item->name);
