@@ -32,9 +32,9 @@ $tel = '+7 (999) 395-40-43';
 $nameSite = 'Двери Вам';
 $descPosition = 'description';
 $titleLow = mb_strtolower($item->name); // для материала
-$descFull = "Заказать ".$titleLow." с доставкой по выгодной цене в ".$city." в интернет магазине ".$nameSite.". ".$tel;
-$descCat = !empty($this->renderPosition($descPosition)) ? ' '.strip_tags($this->renderPosition($descPosition)) : '';
-$descTrim = mb_strimwidth($descFull.$descCat, 0, 250, "...");
+$descFull = "Заказать " . $titleLow . " с доставкой по выгодной цене в " . $city . " в интернет магазине " . $nameSite . ". " . $tel;
+$descCat = !empty($this->renderPosition($descPosition)) ? ' ' . strip_tags($this->renderPosition($descPosition)) : '';
+$descTrim = mb_strimwidth($descFull . $descCat, 0, 250, "...");
 if (empty($item->getParams()->get('metadata.title'))) {
     $doc->setTitle("Купить " . $titleLow . " с доставкой по выгодной цене в " . $city); // заголовок
 }
@@ -54,6 +54,76 @@ $document->setMetaData('og:description', $item->name);
 
 /*EO item meta hack*/
 ?>
+
+
+<?php
+$imageId = '';
+$descriptionId = '';
+$pricePlainId = '';
+if ($imageId != '' && $descriptionId != '' && $pricePlainId != '') {
+    ?>
+    <div hidden>
+        <?php
+        $host = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/';
+
+        $image0src = $item->getElement($imageId)->data()[0]['file'];
+        ?>
+        <div itemscope itemtype="http://schema.org/Product">
+            <span itemprop="name"><?= $item->name; ?></span>
+            <?php
+            if ($image0src) {
+                ?>
+                <img src="<?= $host . $image0src; ?>" itemprop="image" alt="<?= $item->name; ?>">
+                <?php
+            } else {
+                ?>
+                <img src="<?= $host; ?>images/no.jpg" itemprop="image" alt="<?= $item->name; ?>">
+                <?php
+            }
+            ?>
+            <?php if ($this->checkPosition('description')) : ?>
+                <?php
+                $desc = strip_tags($item->getElement($descriptionId)->data()[0]['value']);
+                ?>
+
+                <meta itemprop="description" content="<?= $desc; ?>">
+            <?php endif; ?>
+
+            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <?php
+                $url = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+                $url = explode('?', $url);
+                $url = $url[0];
+                ?>
+                <meta itemprop="url" content="<?= $url; ?>">
+                <?php
+                $data = $item->getElement($pricePlainId)->getIndexData();
+                //echo "<pre>";var_dump($data[$item->id.'__'.$pricePlainId.'__0___value']["value_s"], $data, $item->id);echo "</pre>";
+                $pr = $data[$item->id . '__' . $pricePlainId . '__0___value']["value_s"];
+                ?>
+                <?php
+                if ($pr) {
+                    ?>
+                    <meta itemprop="price" content="<?= $pr; ?>">
+                    <?php
+                } else {
+                    ?>
+                    <meta itemprop="price" content="по запросу">
+                    <?php
+                }
+                ?>
+                <meta itemprop="priceCurrency" content="RUB">
+                <link itemprop="availability" href="http://schema.org/InStock"/>
+                <meta itemprop="priceValidUntil"
+                      content="<?= date('Y-m-d', strtotime(date("Y-m-d", mktime()) . " + 365 day")) ?>">
+
+            </div>
+
+        </div>
+    </div>
+    <?php
+} ?>
+
 
     <div class="full-block">
         <div class="row full-row">

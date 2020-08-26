@@ -101,8 +101,8 @@ class JBModelModelCategorySearch extends JBModel
      */
     public function loadItems($text, $phrase, $curCat)
     {
-        //$places = array('tag', 'index', 'category', 'sku');
-        $places = array('index', 'sku');
+        $places = array('tag', 'index', 'category', 'sku');
+        //$places = array('index', 'sku');
 
         //dump($text, 0);
 
@@ -298,7 +298,7 @@ class JBModelModelCategorySearch extends JBModel
             }
         }
 
-        $access = $elements ? 'NOT element_id in (' . implode(',', $elements) . ')' : '0';
+        $access = $elements ? 'NOT element_id in (' . implode(',', $elements) . ')' : '1';//1 + артикул
 
         return $access;
     }

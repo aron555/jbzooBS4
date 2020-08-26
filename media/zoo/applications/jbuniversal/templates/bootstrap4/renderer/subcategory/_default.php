@@ -42,14 +42,17 @@ if ($showCount || $maxItems != "0" || $maxItems == "-1") {
 
 $image = $this->app->jbimage->get('category_teaser_image', $params);
 
+$subCatImgSrc = $image['src'] ? $image['src'] : '/images/nophoto.png';
+$subCatImgWH = $image['width_height'] ? $image['width_height'] : 'width="80" height="80"';
+
 ?>
     <div class="subcategory pt-0 subcategory-<?php echo $subcategory->alias; ?> media align-items-center">
 
-        <?php if ($vars['params']->get('template.subcategory_teaser_image', 1) && $image['src']) : ?>
+        <?php if ($vars['params']->get('template.subcategory_teaser_image', 1))  : ?>
             <div class="subcategory-image d-flex mr-3">
                 <a href="<?php echo $link; ?>" title="<?php echo $subcategory->name; ?>">
                     <img
-                            src="<?php echo $image['src']; ?>" <?php echo $image['width_height']; ?>
+                            src="<?php echo $subCatImgSrc; ?>" <?php echo $subCatImgWH; ?>
                             alt="<?php echo $subcategory->name; ?>"
                             title="<?php echo $subcategory->name; ?>"
                             class="img-fluid"
