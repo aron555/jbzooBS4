@@ -176,10 +176,7 @@ if ($custom_js = $this->params->get('custom_js'))
     ?>
     <link href="<?= $css.'font-awesome.min.css' ?>" rel="stylesheet" type="text/css">
     <link href="<?= $css.'jquery-ui.min.css' ?>" rel="stylesheet" type="text/css">
-
-    <script>
-        let $ = jQuery.noConflict();
-    </script>
+    
     <script src="<?= $js.'mdb/mdb.min.js' ?>"></script>
     <script src="<?= $js.'slick.min.js' ?>"></script>
     <script src="<?= $js.'yall.min.js' ?>"></script>
