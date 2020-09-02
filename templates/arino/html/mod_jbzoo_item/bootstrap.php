@@ -72,7 +72,7 @@ if ($count) {
                                 ?>
                                 <div class="item-column <?= $colClass . $first . $last ?>">
                                     <?php
-                                    $renderer->render('item.' . $modHelper->getItemLayout(), array(
+                                    echo $renderer->render('item.' . $modHelper->getItemLayout(), array(
                                         'item' => $item,
                                         'params' => $params
                                     ))
