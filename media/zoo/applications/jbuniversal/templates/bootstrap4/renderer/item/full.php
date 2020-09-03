@@ -77,7 +77,7 @@ if ($imageId != '' && $descriptionId != '' && $pricePlainId != '') {
                 <?php
             } else {
                 ?>
-                <img src="<?= $host; ?>images/no.jpg" itemprop="image" alt="<?= $item->name; ?>">
+                <img src="<?= $host; ?>images/nophoto.webp" itemprop="image" alt="<?= $item->name; ?>">
                 <?php
             }
             ?>
@@ -91,9 +91,8 @@ if ($imageId != '' && $descriptionId != '' && $pricePlainId != '') {
 
             <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                 <?php
-                $url = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-                $url = explode('?', $url);
-                $url = $url[0];
+                $itemUrl = $this->app->route->item($item);
+                $url = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . $itemUrl;
                 ?>
                 <meta itemprop="url" content="<?= $url; ?>">
                 <?php
@@ -108,7 +107,7 @@ if ($imageId != '' && $descriptionId != '' && $pricePlainId != '') {
                     <?php
                 } else {
                     ?>
-                    <meta itemprop="price" content="по запросу">
+                    <meta itemprop="lowPrice" content="100">
                     <?php
                 }
                 ?>

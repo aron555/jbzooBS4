@@ -162,7 +162,7 @@ class ElementJBImage extends ElementRepeatable implements iRepeatSubmittable
             }
 
         } else {
-            $image = $this->_getDefaultImage($params);
+            $image = $src = $this->_getDefaultImage($params);
         }
 
         // select render template
