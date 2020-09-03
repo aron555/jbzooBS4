@@ -54,7 +54,6 @@ class JBModuleHelperCategory extends JBModuleHelper
     {
         $renderCat  = array();
         $appId      = (int)$this->_params->get('application', false);
-        $menuItem   = (int)$this->_params->get('menu_item', 0);
         $categories = $this->_getCategories();
         $curCatId   = $this->getCurrentCategory();
 
@@ -62,11 +61,7 @@ class JBModuleHelperCategory extends JBModuleHelper
 
             foreach ($categories as $category) {
 
-                if ($menuItem) {
-                    $catUrl = $this->app->route->category($category, true, $menuItem);
-                } else {
-                    $catUrl = $this->app->route->category($category);
-                }
+                $catUrl = $this->app->route->category($category);
 
                 $currentCat = array(
                     'active_class'  => ($curCatId == $category->id) ? 'category-active' : '',
@@ -117,8 +112,8 @@ class JBModuleHelperCategory extends JBModuleHelper
 
         if ((int)$this->_params->get('category_image_width') || (int)$this->_params->get('category_image_height')) {
 
-            $width  = '400';//(int)$this->_params->get('category_image_width', 100);
-            $height = '400';//(int)$this->_params->get('category_image_height', 100);
+            $width  = (int)$this->_params->get('category_image_width', 100);
+            $height = (int)$this->_params->get('category_image_height', 100);
             $image  = $this->app->jbimage->resize($image['path'], $width, $height);
 
             $imgAttrs = array_merge($imgAttrs, array(
