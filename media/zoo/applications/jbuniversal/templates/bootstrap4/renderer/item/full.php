@@ -136,7 +136,7 @@ if ($imageId != '' && $descriptionId != '' && $pricePlainId != '') {
                                 <div class="badge badge-success ml-auto">
                                     <?php echo $this->renderPosition('new', array(
                                         'style' => 'jbblock',
-                                        'tag' => 'span',
+                                        'tag' => 'strong',
                                         'wrapperTag' => 'span'
                                     )); ?>
                                 </div>
@@ -145,7 +145,7 @@ if ($imageId != '' && $descriptionId != '' && $pricePlainId != '') {
                                 <div class="badge badge-warning ml-auto">
                                     <?php echo $this->renderPosition('hit', array(
                                         'style' => 'jbblock',
-                                        'tag' => 'span',
+                                        'tag' => 'strong',
                                         'wrapperTag' => 'span'
                                     )); ?>
                                 </div>
@@ -154,7 +154,7 @@ if ($imageId != '' && $descriptionId != '' && $pricePlainId != '') {
                                 <div class="badge badge-danger ml-auto">
                                     <?php echo $this->renderPosition('sale', array(
                                         'style' => 'jbblock',
-                                        'tag' => 'span',
+                                        'tag' => 'strong',
                                         'wrapperTag' => 'span'
                                     )); ?>
                                 </div>
@@ -163,7 +163,7 @@ if ($imageId != '' && $descriptionId != '' && $pricePlainId != '') {
                                 <div class="badge badge-info ml-auto">
                                     <?php echo $this->renderPosition('recomend', array(
                                         'style' => 'jbblock',
-                                        'tag' => 'span',
+                                        'tag' => 'strong',
                                         'wrapperTag' => 'span'
                                     )); ?>
                                 </div>
@@ -191,7 +191,10 @@ if ($imageId != '' && $descriptionId != '' && $pricePlainId != '') {
                 <?php if ($this->checkPosition('choose')) : ?>
                     <div class="row mb-3">
                         <div class="col-md-12 item-choose">
-                            <?php echo $this->renderPosition('choose', array('style' => 'block')); ?>
+                            <?php echo $this->renderPosition('choose', array(
+                                'style' => 'jbblock',
+                                'tag' => 'strong',
+                                'wrapperTag' => 'span')); ?>
                         </div>
                     </div>
                 <?php endif; ?>
@@ -200,19 +203,31 @@ if ($imageId != '' && $descriptionId != '' && $pricePlainId != '') {
                 <div class="row mb-3">
                     <?php if ($this->checkPosition('price')) : ?>
                         <div class="col-md-4 col-12 item-price">
-                            <?php echo $this->renderPosition('price'); ?>
+                            <?php echo $this->renderPosition('price', array(
+                                'style' => 'jbblock',
+                                'tag' => 'strong',
+                                'wrapperTag' => 'span'
+                            )); ?>
                         </div>
                     <?php endif; ?>
 
                     <?php if ($this->checkPosition('quantity')) : ?>
                         <div class="col-md-4 col-auto item-quantity">
-                            <?php echo $this->renderPosition('quantity', array('style' => 'block')); ?>
+                            <?php echo $this->renderPosition('quantity', array(
+                                'style' => 'jbblock',
+                                'tag' => 'strong',
+                                'wrapperTag' => 'span'
+                            )); ?>
                         </div>
                     <?php endif; ?>
 
                     <?php if ($this->checkPosition('buttons')) : ?>
                         <div class="col-md-4 col-auto item-buttons">
-                            <?php echo $this->renderPosition('buttons', array('style' => 'block')); ?>
+                            <?php echo $this->renderPosition('buttons', array(
+                                'style' => 'jbblock',
+                                'tag' => 'strong',
+                                'wrapperTag' => 'span'
+                            )); ?>
                         </div>
                     <?php endif; ?>
                 </div>
@@ -221,19 +236,31 @@ if ($imageId != '' && $descriptionId != '' && $pricePlainId != '') {
 
                     <?php if ($this->checkPosition('sku')) : /*Артикул*/ ?>
                         <div class="col-4 item-sku">
-                            <?php echo $this->renderPosition('sku', array('style' => 'block')); ?>
+                            <?php echo $this->renderPosition('sku', array(
+                                'style' => 'jbblock',
+                                'tag' => 'strong',
+                                'wrapperTag' => 'span'
+                            )); ?>
                         </div>
                     <?php endif; ?>
 
                     <?php if ($this->checkPosition('favorite')) : ?>
                         <div class="col-auto item-favorite">
-                            <?php echo $this->renderPosition('favorite', array('style' => 'block')); ?>
+                            <?php echo $this->renderPosition('favorite', array(
+                                'style' => 'jbblock',
+                                'tag' => 'strong',
+                                'wrapperTag' => 'span'
+                            )); ?>
                         </div>
                     <?php endif; ?>
 
                     <?php if ($this->checkPosition('social')) : /*Сравнить*/ ?>
                         <div class="col-auto item-social">
-                            <?php echo $this->renderPosition('social', array('style' => 'block')); ?>
+                            <?php echo $this->renderPosition('social', array(
+                                'style' => 'jbblock',
+                                'tag' => 'strong',
+                                'wrapperTag' => 'span'
+                            )); ?>
                         </div>
                     <?php endif; ?>
 
@@ -242,7 +269,11 @@ if ($imageId != '' && $descriptionId != '' && $pricePlainId != '') {
                 <?php if ($this->checkPosition('text')) : ?>
                     <div class="row mb-3">
                         <div class="col-md item-text">
-                            <?php echo $this->renderPosition('text', array('style' => 'block')); ?>
+                            <?php echo $this->renderPosition('text', array(
+                                'style' => 'jbblock',
+                                'tag' => 'strong',
+                                'wrapperTag' => 'span'
+                            )); ?>
                         </div>
                     </div>
                 <?php endif; ?>
@@ -250,7 +281,11 @@ if ($imageId != '' && $descriptionId != '' && $pricePlainId != '') {
                 <?php if ($this->checkPosition('brand')) : ?>
                     <div class="row mb-3">
                         <div class="col-md-12 item-brand">
-                            <?php echo $this->renderPosition('brand', array('style' => 'block')); ?>
+                            <?php echo $this->renderPosition('brand', array(
+                                'style' => 'jbblock',
+                                'tag' => 'strong',
+                                'wrapperTag' => 'span'
+                            )); ?>
                         </div>
                     </div>
                 <?php endif; ?>
@@ -282,7 +317,11 @@ if ($imageId != '' && $descriptionId != '' && $pricePlainId != '') {
             <?php if ($this->checkPosition('description')) : ?>
                 <div class="tab-pane show active" id="item-desc" role="tabpanel" aria-labelledby="item-desc-tab">
                     <div class="item-desc">
-                        <?php echo $this->renderPosition('description', array('style' => 'block')); ?>
+                        <?php echo $this->renderPosition('description', array(
+                            'style' => 'jbblock',
+                            'tag' => 'strong',
+                            'wrapperTag' => 'span'
+                        )); ?>
                     </div>
                 </div>
             <?php endif; ?>
