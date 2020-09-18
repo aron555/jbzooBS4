@@ -12,16 +12,8 @@
 // no direct access
 defined('_JEXEC') or die('Restricted access'); ?>
 
-<div class="jbprice-option-radio block-parametrov d-flex flex-column">
+<div class="jbprice-option-radio form-check block-parametrov d-flex flex-column">
 
-    <?php
-    foreach ($data as $key => $item) {
-        $item2 = '<span>'.$item.'</span>';
-        //echo "<pre>";var_dump($item2);echo "</pre>";
-        $data[] = $item2;
-    }
-    ?>
-
-    <?php echo $this->_jbhtml->radio($data, $this->getRenderName('value'), null, $this->getValue(), false, false, true); ?>
+    <?php echo $this->_jbhtml->radio($data, $this->getRenderName('value'), 'class="form-check-input"', $this->getValue(), false, false, true); ?>
 
 </div>

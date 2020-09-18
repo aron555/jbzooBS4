@@ -15,5 +15,5 @@ defined('_JEXEC') or die('Restricted access');
 ?>
 
 <span class="jbprice-option-select">
-    <?php echo $this->_jbhtml->select($data, $this->getRenderName('value'), null, $this->getValue());?>
+    <?php echo $this->_jbhtml->select($data, $this->getRenderName('value'), 'class="form-control"', $this->getValue());?>
 </span>
