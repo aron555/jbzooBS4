@@ -66,7 +66,7 @@ if ($imageId != '' && $descriptionId != '' && $pricePlainId != '' && $pr) {
     ?>
     <div hidden>
         <?php
-        $host = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/';
+        $host = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'];
 
         $image0src = $item->getElement($imageId)->data()[0]['file'];
         ?>
@@ -75,11 +75,11 @@ if ($imageId != '' && $descriptionId != '' && $pricePlainId != '' && $pr) {
             <?php
             if ($image0src) {
                 ?>
-                <img src="<?= $host . $image0src; ?>" itemprop="image" alt="<?= $item->name; ?>">
+                <link itemprop="image" href="​<?= $image0src; ?>" />
                 <?php
             } else {
                 ?>
-                <img src="<?= $host; ?>images/nophoto.webp" itemprop="image" alt="<?= $item->name; ?>">
+                <img src="/images/nophoto.webp" itemprop="image" alt="<?= $item->name; ?>">
                 <?php
             }
             ?>
@@ -94,7 +94,7 @@ if ($imageId != '' && $descriptionId != '' && $pricePlainId != '' && $pr) {
             <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                 <?php
                 $itemUrl = $this->app->route->item($item);
-                $url = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . $itemUrl;
+                $url = $host . $itemUrl;
                 ?>
                 <meta itemprop="url" content="<?= $url; ?>">
 
