@@ -60,7 +60,9 @@ $document->setMetaData('og:description', $item->name);
 $imageId = '';
 $descriptionId = '';
 $pricePlainId = '';
-if ($imageId != '' && $descriptionId != '' && $pricePlainId != '') {
+$data = $item->getElement($pricePlainId)->getIndexData();
+$pr = $data[$item->id . '__' . $pricePlainId . '__0___value']["value_s"];
+if ($imageId != '' && $descriptionId != '' && $pricePlainId != '' && $pr) {
     ?>
     <div hidden>
         <?php
@@ -95,22 +97,9 @@ if ($imageId != '' && $descriptionId != '' && $pricePlainId != '') {
                 $url = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . $itemUrl;
                 ?>
                 <meta itemprop="url" content="<?= $url; ?>">
-                <?php
-                $data = $item->getElement($pricePlainId)->getIndexData();
-                //echo "<pre>";var_dump($data[$item->id.'__'.$pricePlainId.'__0___value']["value_s"], $data, $item->id);echo "</pre>";
-                $pr = $data[$item->id . '__' . $pricePlainId . '__0___value']["value_s"];
-                ?>
-                <?php
-                if ($pr) {
-                    ?>
-                    <meta itemprop="price" content="<?= $pr; ?>">
-                    <?php
-                } else {
-                    ?>
-                    <meta itemprop="lowPrice" content="100">
-                    <?php
-                }
-                ?>
+
+                <meta itemprop="price" content="<?= $pr; ?>">
+
                 <meta itemprop="priceCurrency" content="RUB">
                 <link itemprop="availability" href="http://schema.org/InStock"/>
                 <meta itemprop="priceValidUntil"
